@@ -5,14 +5,14 @@ A modern React design system component library built with Tailwind CSS, Radix UI
 ## Installation
 
 ```bash
-npm install @mostaphaqammari/soar-react-components
+npm install @soar-design/soar-react-components
 ```
 
 ## Usage
 
 ```tsx
-import { Button, Card, Input } from '@mostaphaqammari/soar-react-components'
-import '@mostaphaqammari/soar-react-components/globals.css'
+import { Button, Card, Input } from '@soar-design/soar-react-components'
+import '@soar-design/soar-react-components/globals.css'
 
 function App() {
   return (

@@ -21,7 +21,7 @@ export default defineConfig({
         )
 
         // Replace the relative path to fonts to point to the package path
-        const distCss = sourceCss.replace(/\.\.\/assets\/fonts/g, '@mostaphaqammari/soar-react-components/dist/assets/fonts')
+        const distCss = sourceCss.replace(/\.\.\/assets\/fonts/g, '@soar-design/soar-react-components/dist/assets/fonts')
 
         // Write the modified CSS to dist/globals.css
         writeFileSync(

@@ -8,7 +8,7 @@
  * 
  * @example
  * ```tsx
- * import { DirectionProvider } from '@mostaphaqammari/soar-react-components';
+ * import { DirectionProvider } from '@soar-design/soar-react-components';
  * 
  * export default function RootLayout({ children }) {
  *   return (

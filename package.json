@@ -1,5 +1,5 @@
 {
-  "name": "@mostaphaqammari/soar-react-components",
+  "name": "@soar-design/soar-react-components",
   "version": "0.1.0",
   "description": "Soar React Components - Modern design system component library",
   "type": "module",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mostaphaqammari/soar-react-components.git"
+    "url": "https://github.com/soar-design/soar-react-components.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
