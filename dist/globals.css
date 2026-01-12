@@ -527,9 +527,9 @@
   --card-foreground: var(--gray-1000);
   --popover: var(--white-1000);
   --popover-foreground: var(--gray-1000);
-  --primary: var(--brand-600);
-  --primary-hover: var(--brand-700);
-  --primary-foreground: var(--white-1000);
+  --primary: var(--gray-900);
+  --primary-hover: var(--neutral-800);
+  --primary-foreground: var(--white-900);
   --secondary: var(--gray-100);
   --secondary-hover: var(--gray-200);
   --secondary-foreground: var(--gray-900);
@@ -600,9 +600,9 @@
   --card-foreground: var(--white-900);
   --popover: var(--gray-1000);
   --popover-foreground: var(--white-900);
-  --primary: var(--brand-700);
-  --primary-hover: var(--brand-800);
-  --primary-foreground: var(--white-900);
+  --primary: var(--gray-100);
+  --primary-hover: var(--gray-200);
+  --primary-foreground: var(--gray-900);
   --secondary: var(--gray-800);
   --secondary-hover: var(--gray-700);
   --secondary-foreground: var(--white-900);
