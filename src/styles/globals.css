@@ -557,7 +557,7 @@
   --info-foreground: var(--white-1000);
   --border: var(--gray-200);
   --border-brand: var(--brand-1000);
-  --input: var(--black-100);
+  --input: var(--gray-100);
   --ring: var(--brand-600);
   --ring-destructive: var(--red-600);
   --chart-1: var(--green-600);
