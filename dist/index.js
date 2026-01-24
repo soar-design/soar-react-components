@@ -27179,7 +27179,7 @@ function I6({
         /* @__PURE__ */ p(
           "div",
           {
-            className: "bg-background dark:bg-input/30 absolute h-[calc(100%-6px)] rounded-full transition-all duration-200 ease-out shadow-sm",
+            className: "bg-background absolute h-[calc(100%-6px)] rounded-full transition-all duration-200 ease-out shadow-sm",
             style: r,
             "aria-hidden": "true"
           }
