@@ -778,9 +778,9 @@ export declare function Tabs({ className, ...props }: React_2.ComponentProps<typ
 
 export declare function TabsContent({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Content>): JSX.Element;
 
-export declare function TabsList({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.List>): JSX.Element;
+export declare function TabsList({ className, children, ...props }: React_2.ComponentProps<typeof TabsPrimitive.List>): JSX.Element;
 
-export declare function TabsTrigger({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Trigger>): JSX.Element;
+export declare const TabsTrigger: React_2.ForwardRefExoticComponent<Omit<TabsPrimitive.TabsTriggerProps & React_2.RefAttributes<HTMLButtonElement>, "ref"> & React_2.RefAttributes<HTMLButtonElement>>;
 
 export declare function Textarea({ className, ...props }: React_2.ComponentProps<"textarea">): JSX.Element;
 
