@@ -30458,7 +30458,7 @@ function $9({ className: e, ...t }) {
       "data-slot": "input-group",
       role: "group",
       className: R(
-        "group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-xl border transition-[color,box-shadow] outline-none",
+        "group/input-group border-border dark:bg-input/30 relative flex w-full items-center rounded-xl border transition-[color,box-shadow] outline-none",
         "h-12 min-w-0 has-[>textarea]:h-auto",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:pl-2",
