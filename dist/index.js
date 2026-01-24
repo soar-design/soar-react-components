@@ -30476,7 +30476,7 @@ function $9({ className: e, ...t }) {
   );
 }
 const aY = xt(
-  "text-muted-foreground flex h-full cursor-text items-center justify-center gap-2 px-3 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-[calc(var(--radius)-5px)] group-data-[disabled=true]/input-group:opacity-50",
+  "text-muted-foreground flex h-full cursor-text items-center justify-center gap-2 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-[calc(var(--radius)-5px)] group-data-[disabled=true]/input-group:opacity-50",
   {
     variants: {
       align: {
