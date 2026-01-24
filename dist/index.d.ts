@@ -118,7 +118,7 @@ export declare function BreadcrumbPage({ className, ...props }: React_2.Componen
 
 export declare function BreadcrumbSeparator({ children, className, ...props }: React_2.ComponentProps<"li">): JSX.Element;
 
-export declare function Button({ className, variant, size, asChild, ...props }: React_2.ComponentProps<"button"> & VariantProps<typeof buttonVariants> & {
+export declare function Button({ className, variant, size, roundness, asChild, ...props }: React_2.ComponentProps<"button"> & VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
 }): JSX.Element;
 
@@ -137,6 +137,7 @@ export declare const buttonGroupVariants: (props?: ({
 export declare const buttonVariants: (props?: ({
     variant?: "link" | "default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined;
     size?: "default" | "sm" | "lg" | "icon" | "icon-sm" | "icon-lg" | null | undefined;
+    roundness?: "default" | "round" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function Calendar({ className, classNames, showOutsideDays, captionLayout, buttonVariant, formatters, components, ...props }: React_2.ComponentProps<typeof DayPicker> & {
