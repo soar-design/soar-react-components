@@ -453,7 +453,7 @@ declare const inputGroupAddonVariants: (props?: ({
 export declare function InputGroupButton({ className, type, variant, size, ...props }: Omit<React_2.ComponentProps<typeof Button>, "size"> & VariantProps<typeof inputGroupButtonVariants>): JSX.Element;
 
 declare const inputGroupButtonVariants: (props?: ({
-    size?: "sm" | "icon-sm" | "md" | "xs" | "icon-xs" | "icon-md" | null | undefined;
+    size?: "sm" | "icon-sm" | "xs" | "icon-xs" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function InputGroupInput({ className, ...props }: React_2.ComponentProps<"input">): JSX.Element;
