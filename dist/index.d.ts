@@ -60,11 +60,13 @@ export declare function AlertDescription({ className, ...props }: React_2.Compon
 
 export declare function AlertDialog({ ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Root>): JSX.Element;
 
-export declare function AlertDialogAction({ className, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Action>): JSX.Element;
+export declare function AlertDialogAction({ className, variant, size, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Action> & Pick<React_2.ComponentProps<typeof Button>, "variant" | "size">): JSX.Element;
 
-export declare function AlertDialogCancel({ className, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Cancel>): JSX.Element;
+export declare function AlertDialogCancel({ className, variant, size, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Cancel> & Pick<React_2.ComponentProps<typeof Button>, "variant" | "size">): JSX.Element;
 
-export declare function AlertDialogContent({ className, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Content>): JSX.Element;
+export declare function AlertDialogContent({ className, size, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Content> & {
+    size?: "default" | "sm";
+}): JSX.Element;
 
 export declare function AlertDialogDescription({ className, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Description>): JSX.Element;
 
@@ -88,7 +90,9 @@ declare const alertVariants: (props?: ({
 
 export declare function AspectRatio({ ...props }: React.ComponentProps<typeof AspectRatioPrimitive.Root>): JSX.Element;
 
-export declare function Avatar({ className, ...props }: React_2.ComponentProps<typeof AvatarPrimitive.Root>): JSX.Element;
+export declare function Avatar({ className, size, ...props }: React_2.ComponentProps<typeof AvatarPrimitive.Root> & {
+    size?: "default" | "sm" | "lg";
+}): JSX.Element;
 
 export declare function AvatarFallback({ className, ...props }: React_2.ComponentProps<typeof AvatarPrimitive.Fallback>): JSX.Element;
 
@@ -118,7 +122,7 @@ export declare function BreadcrumbPage({ className, ...props }: React_2.Componen
 
 export declare function BreadcrumbSeparator({ children, className, ...props }: React_2.ComponentProps<"li">): JSX.Element;
 
-export declare function Button({ className, variant, size, roundness, asChild, ...props }: React_2.ComponentProps<"button"> & VariantProps<typeof buttonVariants> & {
+export declare function Button({ className, variant, size, asChild, ...props }: React_2.ComponentProps<"button"> & VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
 }): JSX.Element;
 
@@ -136,8 +140,7 @@ export declare const buttonGroupVariants: (props?: ({
 
 export declare const buttonVariants: (props?: ({
     variant?: "link" | "default" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined;
-    size?: "default" | "sm" | "lg" | "icon" | "icon-sm" | "icon-lg" | null | undefined;
-    roundness?: "default" | "round" | null | undefined;
+    size?: "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function Calendar({ className, classNames, showOutsideDays, captionLayout, buttonVariant, formatters, components, ...props }: React_2.ComponentProps<typeof DayPicker> & {
@@ -301,7 +304,9 @@ export declare function DialogContent({ className, children, showCloseButton, ..
 
 export declare function DialogDescription({ className, ...props }: React_2.ComponentProps<typeof DialogPrimitive.Description>): JSX.Element;
 
-export declare function DialogFooter({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+export declare function DialogFooter({ className, showCloseButton, children, ...props }: React_2.ComponentProps<"div"> & {
+    showCloseButton?: boolean;
+}): JSX.Element;
 
 export declare function DialogHeader({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
@@ -453,7 +458,7 @@ declare const inputGroupAddonVariants: (props?: ({
 export declare function InputGroupButton({ className, type, variant, size, ...props }: Omit<React_2.ComponentProps<typeof Button>, "size"> & VariantProps<typeof inputGroupButtonVariants>): JSX.Element;
 
 declare const inputGroupButtonVariants: (props?: ({
-    size?: "sm" | "icon-sm" | "xs" | "icon-xs" | null | undefined;
+    size?: "xs" | "sm" | "icon-xs" | "icon-sm" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function InputGroupInput({ className, ...props }: React_2.ComponentProps<"input">): JSX.Element;
@@ -650,8 +655,9 @@ export declare function Sheet({ ...props }: React_2.ComponentProps<typeof Dialog
 
 export declare function SheetClose({ ...props }: React_2.ComponentProps<typeof DialogPrimitive.Close>): JSX.Element;
 
-export declare function SheetContent({ className, children, side, ...props }: React_2.ComponentProps<typeof DialogPrimitive.Content> & {
+export declare function SheetContent({ className, children, side, showCloseButton, ...props }: React_2.ComponentProps<typeof DialogPrimitive.Content> & {
     side?: "top" | "right" | "bottom" | "left";
+    showCloseButton?: boolean;
 }): JSX.Element;
 
 export declare function SheetDescription({ className, ...props }: React_2.ComponentProps<typeof DialogPrimitive.Description>): JSX.Element;
@@ -756,7 +762,9 @@ export declare function Slider({ className, defaultValue, value, min, max, ...pr
 
 export declare function Spinner({ className, ...props }: React.ComponentProps<"svg">): JSX.Element;
 
-export declare function Switch({ className, ...props }: React_2.ComponentProps<typeof SwitchPrimitive.Root>): JSX.Element;
+export declare function Switch({ className, size, ...props }: React_2.ComponentProps<typeof SwitchPrimitive.Root> & {
+    size?: "sm" | "default";
+}): JSX.Element;
 
 export declare function Table({ className, ...props }: React_2.ComponentProps<"table">): JSX.Element;
 
@@ -774,13 +782,17 @@ export declare function TableHeader({ className, ...props }: React_2.ComponentPr
 
 export declare function TableRow({ className, ...props }: React_2.ComponentProps<"tr">): JSX.Element;
 
-export declare function Tabs({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Root>): JSX.Element;
+export declare function Tabs({ className, orientation, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Root>): JSX.Element;
 
 export declare function TabsContent({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Content>): JSX.Element;
 
-export declare function TabsList({ className, children, ...props }: React_2.ComponentProps<typeof TabsPrimitive.List>): JSX.Element;
+export declare function TabsList({ className, variant, ...props }: React_2.ComponentProps<typeof TabsPrimitive.List> & VariantProps<typeof tabsListVariants>): JSX.Element;
 
-export declare const TabsTrigger: React_2.ForwardRefExoticComponent<Omit<TabsPrimitive.TabsTriggerProps & React_2.RefAttributes<HTMLButtonElement>, "ref"> & React_2.RefAttributes<HTMLButtonElement>>;
+declare const tabsListVariants: (props?: ({
+    variant?: "line" | "default" | null | undefined;
+} & ClassProp) | undefined) => string;
+
+export declare function TabsTrigger({ className, ...props }: React_2.ComponentProps<typeof TabsPrimitive.Trigger>): JSX.Element;
 
 export declare function Textarea({ className, ...props }: React_2.ComponentProps<"textarea">): JSX.Element;
 
