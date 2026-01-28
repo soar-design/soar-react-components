@@ -58,6 +58,8 @@ export declare function AccordionTrigger({ className, children, ...props }: Reac
 
 export declare function Alert({ className, variant, ...props }: React_2.ComponentProps<"div"> & VariantProps<typeof alertVariants>): JSX.Element;
 
+export declare function AlertAction({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+
 export declare function AlertDescription({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
 export declare function AlertDialog({ ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Root>): JSX.Element;

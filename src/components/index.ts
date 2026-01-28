@@ -1,6 +1,6 @@
 export { DirectionProvider } from './rtl'
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './ui/accordion'
-export { Alert, AlertTitle, AlertDescription, alertVariants } from './ui/alert'
+export { Alert, AlertTitle, AlertDescription, AlertAction, alertVariants } from './ui/alert'
 export { AspectRatio } from './ui/aspect-ratio'
 export { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogMedia, AlertDialogOverlay, AlertDialogPortal, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog'
 export { Avatar, AvatarImage, AvatarFallback, AvatarBadge, AvatarGroup, AvatarGroupCount } from './ui/avatar'
