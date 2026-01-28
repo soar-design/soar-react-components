@@ -30452,7 +30452,7 @@ function $9({ className: e, ...t }) {
       role: "group",
       className: R(
         "group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-full border transition-[color] outline-none",
-        "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-3xl",
+        "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:pl-2",
         "has-[>[data-align=inline-end]]:[&>input]:pr-2",
@@ -30575,7 +30575,7 @@ function W9({
     {
       "data-slot": "input-group-control",
       className: R(
-        "flex-1 resize-none rounded-3xl border-0 bg-transparent py-3 shadow-none focus-visible:ring-0 dark:bg-transparent",
+        "flex-1 resize-none rounded-2xl border-0 bg-transparent py-3 shadow-none focus-visible:ring-0 dark:bg-transparent",
         e
       ),
       ...t
@@ -30811,7 +30811,7 @@ function H9({
       "data-slot": "input-otp-slot",
       "data-active": i,
       className: R(
-        "data-[active=true]:border-ring data-[active=true]:ring-ring/50 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-r text-sm shadow-xs transition-all outline-none first:rounded-l-md first:border-l last:rounded-r-md data-[active=true]:z-10 data-[active=true]:ring-[3px]",
+        "data-[active=true]:border-ring data-[active=true]:ring-ring/50 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-r text-sm shadow-xs transition-all outline-none first:rounded-l-lg first:border-l last:rounded-r-lg data-[active=true]:z-10 data-[active=true]:ring-[3px]",
         t
       ),
       ...n,
