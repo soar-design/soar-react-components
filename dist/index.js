@@ -29941,7 +29941,7 @@ function a9({
     ZU,
     {
       "data-slot": "dropdown-menu-separator",
-      className: R("bg-border mx-2 my-1 h-px", e),
+      className: R("bg-border mx-2 my-1.5 h-px", e),
       ...t
     }
   );
