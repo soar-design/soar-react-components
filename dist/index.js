@@ -5476,7 +5476,7 @@ function $J({
     V$,
     {
       "data-slot": "avatar-image",
-      className: T("aspect-square size-full", e),
+      className: T("aspect-square size-full overflow-hidden rounded-full", e),
       ...t
     }
   );
@@ -5490,7 +5490,7 @@ function LJ({
     {
       "data-slot": "avatar-fallback",
       className: T(
-        "bg-muted text-muted-foreground flex size-full items-center justify-center rounded-full text-sm group-data-[size=sm]/avatar:text-xs",
+        "bg-muted text-muted-foreground flex size-full items-center justify-center overflow-hidden rounded-full text-sm group-data-[size=sm]/avatar:text-xs",
         e
       ),
       ...t
