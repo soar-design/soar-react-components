@@ -3463,7 +3463,7 @@ function CJ({ className: e, ...t }) {
     "div",
     {
       "data-slot": "alert-action",
-      className: T("absolute top-3 start-4", e),
+      className: T("absolute top-3 end-4", e),
       ...t
     }
   );
