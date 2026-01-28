@@ -10,6 +10,7 @@ import { Combobox as Combobox_2 } from '@base-ui/react';
 import { Command as Command_2 } from 'cmdk';
 import * as ContextMenuPrimitive from '@radix-ui/react-context-menu';
 import { ControllerProps } from 'react-hook-form';
+import { DayButton } from 'react-day-picker';
 import { DayPicker } from 'react-day-picker';
 import { default as default_2 } from 'embla-carousel-react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
@@ -75,6 +76,8 @@ export declare function AlertDialogFooter({ className, ...props }: React_2.Compo
 
 export declare function AlertDialogHeader({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
+export declare function AlertDialogMedia({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+
 export declare function AlertDialogOverlay({ className, ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Overlay>): JSX.Element;
 
 export declare function AlertDialogPortal({ ...props }: React_2.ComponentProps<typeof AlertDialogPrimitive.Portal>): JSX.Element;
@@ -95,7 +98,13 @@ export declare function Avatar({ className, size, ...props }: React_2.ComponentP
     size?: "default" | "sm" | "lg";
 }): JSX.Element;
 
+export declare function AvatarBadge({ className, ...props }: React_2.ComponentProps<"span">): JSX.Element;
+
 export declare function AvatarFallback({ className, ...props }: React_2.ComponentProps<typeof AvatarPrimitive.Fallback>): JSX.Element;
+
+export declare function AvatarGroup({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+
+export declare function AvatarGroupCount({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
 export declare function AvatarImage({ className, ...props }: React_2.ComponentProps<typeof AvatarPrimitive.Image>): JSX.Element;
 
@@ -147,6 +156,8 @@ export declare const buttonVariants: (props?: ({
 export declare function Calendar({ className, classNames, showOutsideDays, captionLayout, buttonVariant, formatters, components, ...props }: React_2.ComponentProps<typeof DayPicker> & {
     buttonVariant?: React_2.ComponentProps<typeof Button>["variant"];
 }): JSX.Element;
+
+export declare function CalendarDayButton({ className, day, modifiers, ...props }: React_2.ComponentProps<typeof DayButton>): JSX.Element;
 
 export declare function Card({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
