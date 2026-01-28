@@ -30371,7 +30371,7 @@ function T9({ className: e, ...t }) {
     {
       "data-slot": "card",
       className: R(
-        "bg-card text-card-foreground flex flex-col gap-6 rounded-2xl border py-6",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-3xl border py-6",
         e
       ),
       ...t
