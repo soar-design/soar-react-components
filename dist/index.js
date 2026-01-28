@@ -3348,7 +3348,7 @@ function bJ({
     {
       "data-slot": "accordion-trigger",
       className: T(
-        "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180",
+        "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-start text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180",
         e
       ),
       ...n,
@@ -3403,7 +3403,7 @@ const Dv = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, kv = sr, Y
     ] : c;
   }, []);
   return kv(e, i, l, n == null ? void 0 : n.class, n == null ? void 0 : n.className);
-}, cD = Yt("grid gap-0.5 rounded-2xl border px-4 py-3 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pr-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4 w-full relative group/alert", {
+}, cD = Yt("grid gap-0.5 rounded-2xl border px-4 py-3 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4 w-full relative group/alert", {
   variants: {
     variant: {
       default: "bg-card text-card-foreground",
@@ -5089,7 +5089,7 @@ function PJ({
         "data-slot": "alert-dialog-content",
         "data-size": t,
         className: T(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 group/alert-dialog-content fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-3xl border p-6 shadow-2xl duration-200 data-[size=sm]:max-w-xs data-[size=default]:sm:max-w-lg",
+          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 group/alert-dialog-content fixed top-[50%] start-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-3xl border p-6 shadow-2xl duration-200 data-[size=sm]:max-w-xs data-[size=default]:sm:max-w-lg",
           e
         ),
         ...n
@@ -5106,7 +5106,7 @@ function OJ({
     {
       "data-slot": "alert-dialog-header",
       className: T(
-        "grid grid-rows-[auto_1fr] place-items-center gap-1.5 text-center has-data-[slot=alert-dialog-media]:grid-rows-[auto_auto_1fr] has-data-[slot=alert-dialog-media]:gap-x-6 sm:group-data-[size=default]/alert-dialog-content:place-items-start sm:group-data-[size=default]/alert-dialog-content:text-left sm:group-data-[size=default]/alert-dialog-content:has-data-[slot=alert-dialog-media]:grid-rows-[auto_1fr]",
+        "grid grid-rows-[auto_1fr] place-items-center gap-1.5 text-center has-data-[slot=alert-dialog-media]:grid-rows-[auto_auto_1fr] has-data-[slot=alert-dialog-media]:gap-x-6 sm:group-data-[size=default]/alert-dialog-content:place-items-start sm:group-data-[size=default]/alert-dialog-content:text-start sm:group-data-[size=default]/alert-dialog-content:has-data-[slot=alert-dialog-media]:grid-rows-[auto_1fr]",
         e
       ),
       ...t
@@ -5503,7 +5503,7 @@ function FJ({ className: e, ...t }) {
     {
       "data-slot": "avatar-badge",
       className: T(
-        "bg-primary text-primary-foreground ring-background absolute right-0 bottom-0 z-10 inline-flex items-center justify-center rounded-full ring-2 select-none",
+        "bg-primary text-primary-foreground ring-background absolute end-0 bottom-0 z-10 inline-flex items-center justify-center rounded-full ring-2 select-none",
         "group-data-[size=sm]/avatar:size-2 group-data-[size=sm]/avatar:[&>svg]:hidden",
         "group-data-[size=default]/avatar:size-2.5 group-data-[size=default]/avatar:[&>svg]:size-2",
         "group-data-[size=lg]/avatar:size-3 group-data-[size=lg]/avatar:[&>svg]:size-2",
@@ -8726,7 +8726,7 @@ function YJ({
         ),
         caption_label: T(
           "select-none font-medium",
-          r === "label" ? "text-sm" : "rounded-md pl-2 pr-1 flex items-center gap-1 text-sm h-8 [&>svg]:text-muted-foreground [&>svg]:size-3.5",
+          r === "label" ? "text-sm" : "rounded-md ps-2 pe-1 flex items-center gap-1 text-sm h-8 [&>svg]:text-muted-foreground [&>svg]:size-3.5",
           l.caption_label
         ),
         table: "w-full border-collapse",
@@ -8745,16 +8745,16 @@ function YJ({
           l.week_number
         ),
         day: T(
-          "relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-r-md group/day aspect-square select-none",
-          s.showWeekNumber ? "[&:nth-child(2)[data-selected=true]_button]:rounded-l-md" : "[&:first-child[data-selected=true]_button]:rounded-l-md",
+          "relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-e-md group/day aspect-square select-none",
+          s.showWeekNumber ? "[&:nth-child(2)[data-selected=true]_button]:rounded-s-md" : "[&:first-child[data-selected=true]_button]:rounded-s-md",
           l.day
         ),
         range_start: T(
-          "rounded-l-md bg-accent",
+          "rounded-s-md bg-accent",
           l.range_start
         ),
         range_middle: T("rounded-none", l.range_middle),
-        range_end: T("rounded-r-md bg-accent", l.range_end),
+        range_end: T("rounded-e-md bg-accent", l.range_end),
         today: T(
           "bg-accent text-accent-foreground rounded-md data-[selected=true]:rounded-none",
           l.today
@@ -8817,7 +8817,7 @@ function kF({
       "data-range-end": n.range_end,
       "data-range-middle": n.range_middle,
       className: T(
-        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70",
+        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-e-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-s-md [&>span]:text-xs [&>span]:opacity-70",
         o.day,
         e
       ),
@@ -10155,7 +10155,7 @@ function ZJ({ className: e, ...t }) {
         {
           className: T(
             "flex",
-            r === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+            r === "horizontal" ? "-ms-4" : "-mt-4 flex-col",
             e
           ),
           ...t
@@ -10174,7 +10174,7 @@ function QJ({ className: e, ...t }) {
       "data-slot": "carousel-item",
       className: T(
         "min-w-0 shrink-0 grow-0 basis-full",
-        n === "horizontal" ? "pl-4" : "pt-4",
+        n === "horizontal" ? "ps-4" : "pt-4",
         e
       ),
       ...t
@@ -10196,7 +10196,7 @@ function JJ({
       size: n,
       className: T(
         "absolute size-8 rounded-full",
-        o === "horizontal" ? "top-1/2 -left-12 -translate-y-1/2" : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        o === "horizontal" ? "top-1/2 -start-12 -translate-y-1/2" : "-top-12 start-1/2 -translate-x-1/2 rotate-90",
         e
       ),
       disabled: !i,
@@ -10224,7 +10224,7 @@ function eee({
       size: n,
       className: T(
         "absolute size-8 rounded-full",
-        o === "horizontal" ? "top-1/2 -right-12 -translate-y-1/2" : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        o === "horizontal" ? "top-1/2 -end-12 -translate-y-1/2" : "-bottom-12 start-1/2 -translate-x-1/2 rotate-90",
         e
       ),
       disabled: !i,
@@ -22528,8 +22528,8 @@ function l3({ className: e, ...t }) {
         "group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-full border transition-[color] outline-none",
         "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
-        "has-[>[data-align=inline-start]]:[&>input]:pl-2",
-        "has-[>[data-align=inline-end]]:[&>input]:pr-2",
+        "has-[>[data-align=inline-start]]:[&>input]:ps-2",
+        "has-[>[data-align=inline-end]]:[&>input]:pe-2",
         "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
         "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
         // Focus state.
@@ -22547,8 +22547,8 @@ const c3 = Yt(
   {
     variants: {
       align: {
-        "inline-start": "order-first pl-3 has-[>button]:ml-[-0.45rem] has-[>kbd]:ml-[-0.35rem]",
-        "inline-end": "order-last pr-3 has-[>button]:mr-[-0.45rem] has-[>kbd]:mr-[-0.35rem]",
+        "inline-start": "order-first ps-3 has-[>button]:ms-[-0.45rem] has-[>kbd]:ms-[-0.35rem]",
+        "inline-end": "order-last pe-3 has-[>button]:me-[-0.45rem] has-[>kbd]:me-[-0.35rem]",
         "block-start": "order-first w-full justify-start px-3 pt-3 [.border-b]:pb-3 group-has-[>input]/input-group:pt-2.5",
         "block-end": "order-last w-full justify-start px-3 pb-3 [.border-t]:pt-3 group-has-[>input]/input-group:pb-2.5"
       }
@@ -22786,7 +22786,7 @@ function vee({
     {
       "data-slot": "combobox-item",
       className: T(
-        "data-highlighted:bg-accent data-highlighted:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pr-8 pl-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "data-highlighted:bg-accent data-highlighted:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
@@ -22796,7 +22796,7 @@ function vee({
           BR,
           {
             "data-slot": "combobox-item-indicator",
-            render: /* @__PURE__ */ m("span", { className: "pointer-events-none absolute right-2 flex size-4 items-center justify-center" }),
+            render: /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-4 items-center justify-center" }),
             children: /* @__PURE__ */ m(ra, { className: "pointer-events-none size-4 pointer-coarse:size-5" })
           }
         )
@@ -22886,7 +22886,7 @@ function Eee({
     {
       "data-slot": "combobox-chip",
       className: T(
-        "bg-muted text-foreground flex h-[calc(--spacing(5.5))] w-fit items-center justify-center gap-1 rounded-full px-1.5 text-xs font-medium whitespace-nowrap has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-disabled:opacity-50 has-data-[slot=combobox-chip-remove]:pr-0",
+        "bg-muted text-foreground flex h-[calc(--spacing(5.5))] w-fit items-center justify-center gap-1 rounded-full px-1.5 text-xs font-medium whitespace-nowrap has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-disabled:opacity-50 has-data-[slot=combobox-chip-remove]:pe-0",
         e
       ),
       ...r,
@@ -22896,7 +22896,7 @@ function Eee({
           qR,
           {
             render: /* @__PURE__ */ m(ur, { variant: "ghost", size: "icon-xs" }),
-            className: "-ml-1 opacity-50 hover:opacity-100",
+            className: "-ms-1 opacity-50 hover:opacity-100",
             "data-slot": "combobox-chip-remove",
             children: /* @__PURE__ */ m(El, { className: "pointer-events-none" })
           }
@@ -23277,7 +23277,7 @@ function W3({
       {
         "data-slot": "dialog-content",
         className: T(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-3xl border p-6 shadow-2xl duration-200 outline-none sm:max-w-lg",
+          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] start-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-3xl border p-6 shadow-2xl duration-200 outline-none sm:max-w-lg",
           e
         ),
         ...r,
@@ -23287,7 +23287,7 @@ function W3({
             Ir,
             {
               "data-slot": "dialog-close",
-              className: "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-full opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+              className: "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 end-4 rounded-full opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
               children: [
                 /* @__PURE__ */ m(El, {}),
                 /* @__PURE__ */ m("span", { className: "sr-only", children: "Close" })
@@ -23304,7 +23304,7 @@ function j3({ className: e, ...t }) {
     "div",
     {
       "data-slot": "dialog-header",
-      className: T("flex flex-col gap-2 text-center sm:text-left", e),
+      className: T("flex flex-col gap-2 text-center sm:text-start", e),
       ...t
     }
   );
@@ -23504,7 +23504,7 @@ function Lee({
     {
       "data-slot": "command-shortcut",
       className: T(
-        "text-muted-foreground ml-auto text-xs tracking-widest",
+        "text-muted-foreground me-auto text-xs tracking-widest",
         e
       ),
       ...t
@@ -25079,13 +25079,13 @@ function Hee({
       "data-slot": "context-menu-sub-trigger",
       "data-inset": t,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:ps-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ml-auto" })
+        /* @__PURE__ */ m(oa, { className: "me-auto" })
       ]
     }
   );
@@ -25135,7 +25135,7 @@ function Uee({
       "data-inset": t,
       "data-variant": n,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:ps-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...r
@@ -25153,13 +25153,13 @@ function Kee({
     {
       "data-slot": "context-menu-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -25175,12 +25175,12 @@ function Yee({
     {
       "data-slot": "context-menu-radio-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
         t
       ]
     }
@@ -25197,7 +25197,7 @@ function Xee({
       "data-slot": "context-menu-label",
       "data-inset": t,
       className: T(
-        "text-foreground px-2 py-1.5 text-sm font-medium data-[inset]:pl-8",
+        "text-foreground px-2 py-1.5 text-sm font-medium data-[inset]:ps-8",
         e
       ),
       ...n
@@ -25226,7 +25226,7 @@ function Qee({
     {
       "data-slot": "context-menu-shortcut",
       className: T(
-        "text-muted-foreground ml-auto text-xs tracking-widest",
+        "text-muted-foreground me-auto text-xs tracking-widest",
         e
       ),
       ...t
@@ -26343,7 +26343,7 @@ function vte({
       "data-inset": t,
       "data-variant": n,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:ps-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...r
@@ -26361,13 +26361,13 @@ function bte({
     {
       "data-slot": "menubar-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-xs py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-xs py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -26383,12 +26383,12 @@ function yte({
     {
       "data-slot": "menubar-radio-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-xs py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-xs py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
         t
       ]
     }
@@ -26405,7 +26405,7 @@ function wte({
       "data-slot": "menubar-label",
       "data-inset": t,
       className: T(
-        "px-2 py-1.5 text-sm font-medium data-[inset]:pl-8",
+        "px-2 py-1.5 text-sm font-medium data-[inset]:ps-8",
         e
       ),
       ...n
@@ -26434,7 +26434,7 @@ function Ste({
     {
       "data-slot": "menubar-shortcut",
       className: T(
-        "text-muted-foreground ml-auto text-xs tracking-widest",
+        "text-muted-foreground me-auto text-xs tracking-widest",
         e
       ),
       ...t
@@ -26458,13 +26458,13 @@ function Ete({
       "data-slot": "menubar-sub-trigger",
       "data-inset": t,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-none select-none data-[inset]:pl-8",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-none select-none data-[inset]:ps-8",
         e
       ),
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ml-auto h-4 w-4" })
+        /* @__PURE__ */ m(oa, { className: "me-auto h-4 w-4" })
       ]
     }
   );
@@ -26502,7 +26502,7 @@ function Rte({
             "data-slot": "native-select",
             "data-size": t,
             className: T(
-              "border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-md border bg-transparent px-3 py-2 pr-9 text-sm shadow-xs transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1",
+              "border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-md border bg-transparent px-3 py-2 pe-9 text-sm shadow-xs transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1",
               "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
               "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
               e
@@ -26513,7 +26513,7 @@ function Rte({
         /* @__PURE__ */ m(
           uo,
           {
-            className: "text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none",
+            className: "text-muted-foreground pointer-events-none absolute top-1/2 end-3.5 size-4 -translate-y-1/2 opacity-50 select-none",
             "aria-hidden": "true",
             "data-slot": "native-select-icon"
           }
@@ -27344,7 +27344,7 @@ function Mte({
         /* @__PURE__ */ m(
           uo,
           {
-            className: "relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180",
+            className: "relative top-[1px] ms-1 size-3 transition duration-300 group-data-[state=open]:rotate-180",
             "aria-hidden": "true"
           }
         )
@@ -27361,7 +27361,7 @@ function Ate({
     {
       "data-slot": "navigation-menu-content",
       className: T(
-        "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 top-0 left-0 w-full p-2 pr-2.5 md:absolute md:w-auto",
+        "data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 top-0 start-0 w-full p-2 pe-2.5 md:absolute md:w-auto",
         "group-data-[viewport=false]/navigation-menu:bg-popover group-data-[viewport=false]/navigation-menu:text-popover-foreground group-data-[viewport=false]/navigation-menu:data-[state=open]:animate-in group-data-[viewport=false]/navigation-menu:data-[state=closed]:animate-out group-data-[viewport=false]/navigation-menu:data-[state=closed]:zoom-out-95 group-data-[viewport=false]/navigation-menu:data-[state=open]:zoom-in-95 group-data-[viewport=false]/navigation-menu:data-[state=open]:fade-in-0 group-data-[viewport=false]/navigation-menu:data-[state=closed]:fade-out-0 group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:mt-1.5 group-data-[viewport=false]/navigation-menu:overflow-hidden group-data-[viewport=false]/navigation-menu:rounded-md group-data-[viewport=false]/navigation-menu:border group-data-[viewport=false]/navigation-menu:shadow group-data-[viewport=false]/navigation-menu:duration-200 **:data-[slot=navigation-menu-link]:focus:ring-0 **:data-[slot=navigation-menu-link]:focus:outline-none",
         e
       ),
@@ -27377,7 +27377,7 @@ function n8({
     "div",
     {
       className: T(
-        "absolute top-full left-0 isolate z-50 flex justify-center"
+        "absolute top-full start-0 isolate z-50 flex justify-center"
       ),
       children: /* @__PURE__ */ m(
         e8,
@@ -27422,7 +27422,7 @@ function kte({
         e
       ),
       ...t,
-      children: /* @__PURE__ */ m("div", { className: "bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md" })
+      children: /* @__PURE__ */ m("div", { className: "bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-ts-sm shadow-md" })
     }
   );
 }
@@ -27486,7 +27486,7 @@ function Vte({
     {
       "aria-label": "Go to previous page",
       size: "default",
-      className: T("gap-1 px-2.5 sm:pl-2.5", e),
+      className: T("gap-1 px-2.5 sm:ps-2.5", e),
       ...t,
       children: [
         /* @__PURE__ */ m(_C, {}),
@@ -27504,7 +27504,7 @@ function zte({
     {
       "aria-label": "Go to next page",
       size: "default",
-      className: T("gap-1 px-2.5 sm:pr-2.5", e),
+      className: T("gap-1 px-2.5 sm:pe-2.5", e),
       ...t,
       children: [
         /* @__PURE__ */ m("span", { className: "hidden sm:block", children: "Next" }),
@@ -28347,7 +28347,7 @@ function Zte({
         {
           "data-slot": "radio-group-indicator",
           className: "relative flex items-center justify-center",
-          children: /* @__PURE__ */ m(Cl, { className: "fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2" })
+          children: /* @__PURE__ */ m(Cl, { className: "fill-primary absolute top-1/2 start-1/2 size-2 -translate-x-1/2 -translate-y-1/2" })
         }
       )
     }
@@ -29887,7 +29887,7 @@ function ene({
     {
       "data-slot": "resizable-handle",
       className: T(
-        "bg-border focus-visible:ring-ring relative flex w-px items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:translate-x-0 data-[panel-group-direction=vertical]:after:-translate-y-1/2 [&[data-panel-group-direction=vertical]>div]:rotate-90",
+        "bg-border focus-visible:ring-ring relative flex w-px items-center justify-center after:absolute after:inset-y-0 after:start-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:start-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:translate-x-0 data-[panel-group-direction=vertical]:after:-translate-y-1/2 [&[data-panel-group-direction=vertical]>div]:rotate-90",
         t
       ),
       ...n,
@@ -30516,7 +30516,7 @@ function U6({
       orientation: t,
       className: T(
         "flex touch-none p-px transition-colors select-none",
-        t === "vertical" && "h-full w-2.5 border-l border-l-transparent",
+        t === "vertical" && "h-full w-2.5 border-s border-s-transparent",
         t === "horizontal" && "h-2.5 flex-col border-t border-t-transparent",
         e
       ),
@@ -31501,7 +31501,7 @@ function lne({
     {
       "data-slot": "select-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pr-8 pl-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2",
+        "focus:bg-accent focus:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2",
         e
       ),
       ...n,
@@ -31510,7 +31510,7 @@ function lne({
           "span",
           {
             "data-slot": "select-item-indicator",
-            className: "absolute right-2 flex size-3.5 items-center justify-center",
+            className: "absolute end-2 flex size-3.5 items-center justify-center",
             children: /* @__PURE__ */ m(I9, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) })
           }
         ),
@@ -31652,8 +31652,8 @@ function H9({
         "data-slot": "sheet-content",
         className: T(
           "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out fixed z-50 flex flex-col gap-4 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500",
-          n === "right" && "data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right inset-y-0 right-0 h-full w-3/4 border-l sm:max-w-sm",
-          n === "left" && "data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left inset-y-0 left-0 h-full w-3/4 border-r sm:max-w-sm",
+          n === "right" && "data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right inset-y-0 end-0 h-full w-3/4 border-s sm:max-w-sm",
+          n === "left" && "data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left inset-y-0 start-0 h-full w-3/4 border-e sm:max-w-sm",
           n === "top" && "data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top inset-x-0 top-0 h-auto border-b",
           n === "bottom" && "data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom inset-x-0 bottom-0 h-auto border-t",
           e
@@ -31661,7 +31661,7 @@ function H9({
         ...o,
         children: [
           t,
-          r && /* @__PURE__ */ we(Ir, { className: "ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none", children: [
+          r && /* @__PURE__ */ we(Ir, { className: "ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 end-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none", children: [
             /* @__PURE__ */ m(El, { className: "size-4" }),
             /* @__PURE__ */ m("span", { className: "sr-only", children: "Close" })
           ] })
@@ -32292,9 +32292,9 @@ function mne({
             "data-slot": "sidebar-container",
             className: T(
               "fixed inset-y-0 z-10 hidden h-svh w-(--sidebar-width) transition-[left,right,width] duration-200 ease-linear md:flex",
-              e === "left" ? "left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]" : "right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
+              e === "left" ? "start-0 group-data-[collapsible=offcanvas]:start-[calc(var(--sidebar-width)*-1)]" : "end-0 group-data-[collapsible=offcanvas]:end-[calc(var(--sidebar-width)*-1)]",
               // Adjust the padding for floating and inset variants.
-              t === "floating" || t === "inset" ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]" : "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l",
+              t === "floating" || t === "inset" ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]" : "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-e group-data-[side=right]:border-s",
               r
             ),
             ...a,
@@ -32350,12 +32350,12 @@ function gne({ className: e, ...t }) {
       onClick: n,
       title: "Toggle Sidebar",
       className: T(
-        "hover:after:bg-sidebar-border absolute inset-y-0 z-20 hidden w-4 -translate-x-1/2 transition-all ease-linear group-data-[side=left]:-right-4 group-data-[side=right]:left-0 after:absolute after:inset-y-0 after:left-1/2 after:w-[2px] sm:flex",
+        "hover:after:bg-sidebar-border absolute inset-y-0 z-20 hidden w-4 -translate-x-1/2 transition-all ease-linear group-data-[side=left]:-end-4 group-data-[side=right]:start-0 after:absolute after:inset-y-0 after:start-1/2 after:w-[2px] sm:flex",
         "in-data-[side=left]:cursor-w-resize in-data-[side=right]:cursor-e-resize",
         "[[data-side=left][data-state=collapsed]_&]:cursor-e-resize [[data-side=right][data-state=collapsed]_&]:cursor-w-resize",
-        "hover:group-data-[collapsible=offcanvas]:bg-sidebar group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full",
-        "[[data-side=left][data-collapsible=offcanvas]_&]:-right-2",
-        "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2",
+        "hover:group-data-[collapsible=offcanvas]:bg-sidebar group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:start-full",
+        "[[data-side=left][data-collapsible=offcanvas]_&]:-end-2",
+        "[[data-side=right][data-collapsible=offcanvas]_&]:-start-2",
         e
       ),
       ...t
@@ -32369,7 +32369,7 @@ function vne({ className: e, ...t }) {
       "data-slot": "sidebar-inset",
       className: T(
         "bg-background relative flex w-full flex-1 flex-col",
-        "md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2",
+        "md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ms-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ms-2",
         e
       ),
       ...t
@@ -32481,7 +32481,7 @@ function _ne({
       "data-slot": "sidebar-group-action",
       "data-sidebar": "group-action",
       className: T(
-        "text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground absolute top-3.5 right-3 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-hidden transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
+        "text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground absolute top-3.5 end-3 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-hidden transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
         // Increases the hit area of the button on mobile.
         "after:absolute after:-inset-2 md:after:hidden",
         "group-data-[collapsible=icon]:hidden",
@@ -32528,7 +32528,7 @@ function One({ className: e, ...t }) {
   );
 }
 const A7 = Yt(
-  "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-hidden ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
+  "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-start text-sm outline-hidden ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pe-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -32594,7 +32594,7 @@ function Tne({
       "data-slot": "sidebar-menu-action",
       "data-sidebar": "menu-action",
       className: T(
-        "text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground absolute top-1.5 right-1 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-hidden transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
+        "text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground absolute top-1.5 end-1 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-hidden transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
         // Increases the hit area of the button on mobile.
         "after:absolute after:-inset-2 md:after:hidden",
         "peer-data-[size=sm]/menu-button:top-1",
@@ -32618,7 +32618,7 @@ function Ine({
       "data-slot": "sidebar-menu-badge",
       "data-sidebar": "menu-badge",
       className: T(
-        "text-sidebar-foreground pointer-events-none absolute right-1 flex h-5 min-w-5 items-center justify-center rounded-md px-1 text-xs font-medium tabular-nums select-none",
+        "text-sidebar-foreground pointer-events-none absolute end-1 flex h-5 min-w-5 items-center justify-center rounded-md px-1 text-xs font-medium tabular-nums select-none",
         "peer-hover/menu-button:text-sidebar-accent-foreground peer-data-[active=true]/menu-button:text-sidebar-accent-foreground",
         "peer-data-[size=sm]/menu-button:top-1",
         "peer-data-[size=default]/menu-button:top-1.5",
@@ -32672,7 +32672,7 @@ function Ane({ className: e, ...t }) {
       "data-slot": "sidebar-menu-sub",
       "data-sidebar": "menu-sub",
       className: T(
-        "border-sidebar-border mx-3.5 flex min-w-0 translate-x-px flex-col gap-1 border-l px-2.5 py-0.5",
+        "border-sidebar-border mx-3.5 flex min-w-0 translate-x-px flex-col gap-1 border-s px-2.5 py-0.5",
         "group-data-[collapsible=icon]:hidden",
         e
       ),
@@ -33551,7 +33551,7 @@ function Hne({ className: e, ...t }) {
     {
       "data-slot": "table-head",
       className: T(
-        "text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
+        "text-foreground h-10 px-2 text-start align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pe-0 [&>[role=checkbox]]:translate-y-[2px]",
         e
       ),
       ...t
@@ -33564,7 +33564,7 @@ function qne({ className: e, ...t }) {
     {
       "data-slot": "table-cell",
       className: T(
-        "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
+        "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pe-0 [&>[role=checkbox]]:translate-y-[2px]",
         e
       ),
       ...t
@@ -33855,7 +33855,7 @@ function Yne({
         "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring text-foreground/60 hover:text-foreground dark:text-muted-foreground dark:hover:text-foreground relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         "group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent",
         "data-[state=active]:bg-background dark:data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 data-[state=active]:text-foreground",
-        "after:bg-foreground after:absolute after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100",
+        "after:bg-foreground after:absolute after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-end-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100",
         e
       ),
       ...t
@@ -34244,7 +34244,7 @@ function Jne({
           size: a.size || r
         }),
         "w-auto min-w-0 shrink-0 px-3 focus:z-10 focus-visible:z-10",
-        "data-[spacing=0]:rounded-none data-[spacing=0]:shadow-none data-[spacing=0]:first:rounded-l-md data-[spacing=0]:last:rounded-r-md data-[spacing=0]:data-[variant=outline]:border-l-0 data-[spacing=0]:data-[variant=outline]:first:border-l",
+        "data-[spacing=0]:rounded-none data-[spacing=0]:shadow-none data-[spacing=0]:first:rounded-s-md data-[spacing=0]:last:rounded-e-md data-[spacing=0]:data-[variant=outline]:border-s-0 data-[spacing=0]:data-[variant=outline]:first:border-s",
         e
       ),
       ...o,
@@ -36126,8 +36126,8 @@ function are({
           "group/drawer-content bg-background fixed z-50 flex h-auto flex-col",
           "data-[vaul-drawer-direction=top]:inset-x-0 data-[vaul-drawer-direction=top]:top-0 data-[vaul-drawer-direction=top]:mb-24 data-[vaul-drawer-direction=top]:max-h-[80vh] data-[vaul-drawer-direction=top]:rounded-b-lg data-[vaul-drawer-direction=top]:border-b",
           "data-[vaul-drawer-direction=bottom]:inset-x-0 data-[vaul-drawer-direction=bottom]:bottom-0 data-[vaul-drawer-direction=bottom]:mt-24 data-[vaul-drawer-direction=bottom]:max-h-[80vh] data-[vaul-drawer-direction=bottom]:rounded-t-lg data-[vaul-drawer-direction=bottom]:border-t",
-          "data-[vaul-drawer-direction=right]:inset-y-0 data-[vaul-drawer-direction=right]:right-0 data-[vaul-drawer-direction=right]:w-3/4 data-[vaul-drawer-direction=right]:border-l data-[vaul-drawer-direction=right]:sm:max-w-sm",
-          "data-[vaul-drawer-direction=left]:inset-y-0 data-[vaul-drawer-direction=left]:left-0 data-[vaul-drawer-direction=left]:w-3/4 data-[vaul-drawer-direction=left]:border-r data-[vaul-drawer-direction=left]:sm:max-w-sm",
+          "data-[vaul-drawer-direction=right]:inset-y-0 data-[vaul-drawer-direction=right]:end-0 data-[vaul-drawer-direction=right]:w-3/4 data-[vaul-drawer-direction=right]:border-s data-[vaul-drawer-direction=right]:sm:max-w-sm",
+          "data-[vaul-drawer-direction=left]:inset-y-0 data-[vaul-drawer-direction=left]:start-0 data-[vaul-drawer-direction=left]:w-3/4 data-[vaul-drawer-direction=left]:border-e data-[vaul-drawer-direction=left]:sm:max-w-sm",
           e
         ),
         ...n,
@@ -36145,7 +36145,7 @@ function ire({ className: e, ...t }) {
     {
       "data-slot": "drawer-header",
       className: T(
-        "flex flex-col gap-0.5 p-4 group-data-[vaul-drawer-direction=bottom]/drawer-content:text-center group-data-[vaul-drawer-direction=top]/drawer-content:text-center md:gap-1.5 md:text-left",
+        "flex flex-col gap-0.5 p-4 group-data-[vaul-drawer-direction=bottom]/drawer-content:text-center group-data-[vaul-drawer-direction=top]/drawer-content:text-center md:gap-1.5 md:text-start",
         e
       ),
       ...t
@@ -36498,7 +36498,7 @@ function hre({
       "data-inset": t,
       "data-variant": n,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-lg px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-lg px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:ps-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...r
@@ -36516,13 +36516,13 @@ function gre({
     {
       "data-slot": "dropdown-menu-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -36549,12 +36549,12 @@ function bre({
     {
       "data-slot": "dropdown-menu-radio-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
         t
       ]
     }
@@ -36571,7 +36571,7 @@ function yre({
       "data-slot": "dropdown-menu-label",
       "data-inset": t,
       className: T(
-        "px-2 py-1.5 text-sm font-medium data-[inset]:pl-8",
+        "px-2 py-1.5 text-sm font-medium data-[inset]:ps-8",
         e
       ),
       ...n
@@ -36600,7 +36600,7 @@ function xre({
     {
       "data-slot": "dropdown-menu-shortcut",
       className: T(
-        "text-muted-foreground ml-auto text-xs tracking-widest",
+        "text-muted-foreground me-auto text-xs tracking-widest",
         e
       ),
       ...t
@@ -36624,13 +36624,13 @@ function Cre({
       "data-slot": "dropdown-menu-sub-trigger",
       "data-inset": t,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground flex cursor-default items-center gap-2 rounded-lg px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground flex cursor-default items-center gap-2 rounded-lg px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:ps-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ml-auto size-4" })
+        /* @__PURE__ */ m(oa, { className: "me-auto size-4" })
       ]
     }
   );
@@ -36931,7 +36931,7 @@ function zre({
     const a = [
       ...new Map(n.map((s) => [s == null ? void 0 : s.message, s])).values()
     ];
-    return (a == null ? void 0 : a.length) == 1 ? (i = a[0]) == null ? void 0 : i.message : /* @__PURE__ */ m("ul", { className: "ml-4 flex list-disc flex-col gap-1", children: a.map(
+    return (a == null ? void 0 : a.length) == 1 ? (i = a[0]) == null ? void 0 : i.message : /* @__PURE__ */ m("ul", { className: "ms-4 flex list-disc flex-col gap-1", children: a.map(
       (s, l) => (s == null ? void 0 : s.message) && /* @__PURE__ */ m("li", { children: s.message }, l)
     ) });
   }, [t, n]);
@@ -36947,11 +36947,11 @@ function zre({
   ) : null;
 }
 const UQ = Yt(
-  "flex w-fit items-stretch [&>*]:focus-visible:z-10 [&>*]:focus-visible:relative [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-lg has-[>[data-slot=button-group]]:gap-2",
+  "flex w-fit items-stretch [&>*]:focus-visible:z-10 [&>*]:focus-visible:relative [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-e-lg has-[>[data-slot=button-group]]:gap-2",
   {
     variants: {
       orientation: {
-        horizontal: "[&>*:not(:first-child)]:rounded-l-none [&>*:not(:first-child)]:border-l-0 [&>*:not(:last-child)]:rounded-r-none",
+        horizontal: "[&>*:not(:first-child)]:rounded-s-none [&>*:not(:first-child)]:border-s-0 [&>*:not(:last-child)]:rounded-e-none",
         vertical: "flex-col [&>*:not(:first-child)]:rounded-t-none [&>*:not(:first-child)]:border-t-0 [&>*:not(:last-child)]:rounded-b-none"
       }
     },
@@ -37318,7 +37318,7 @@ function Jre({
       "data-slot": "input-otp-slot",
       "data-active": i,
       className: T(
-        "data-[active=true]:border-ring data-[active=true]:ring-ring/50 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-r text-sm shadow-xs transition-all outline-none first:rounded-l-lg first:border-l last:rounded-r-lg data-[active=true]:z-10 data-[active=true]:ring-[3px]",
+        "data-[active=true]:border-ring data-[active=true]:ring-ring/50 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-e text-sm shadow-xs transition-all outline-none first:rounded-s-lg first:border-s last:rounded-e-lg data-[active=true]:z-10 data-[active=true]:ring-[3px]",
         t
       ),
       ...n,
