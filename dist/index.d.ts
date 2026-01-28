@@ -6,6 +6,7 @@ import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import { ClassProp } from 'class-variance-authority/types';
 import { ClassValue } from 'clsx';
 import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
+import { Combobox as Combobox_2 } from '@base-ui/react';
 import { Command as Command_2 } from 'cmdk';
 import * as ContextMenuPrimitive from '@radix-ui/react-context-menu';
 import { ControllerProps } from 'react-hook-form';
@@ -234,6 +235,41 @@ export declare function CollapsibleContent({ ...props }: React.ComponentProps<ty
 
 export declare function CollapsibleTrigger({ ...props }: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>): JSX.Element;
 
+export declare const Combobox: typeof Combobox_2.Root;
+
+export declare function ComboboxChip({ className, children, showRemove, ...props }: Combobox_2.Chip.Props & {
+    showRemove?: boolean;
+}): JSX.Element;
+
+export declare function ComboboxChips({ className, ...props }: React_2.ComponentPropsWithRef<typeof Combobox_2.Chips> & Combobox_2.Chips.Props): JSX.Element;
+
+export declare function ComboboxChipsInput({ className, children, ...props }: Combobox_2.Input.Props): JSX.Element;
+
+export declare function ComboboxCollection({ ...props }: Combobox_2.Collection.Props): JSX.Element;
+
+export declare function ComboboxContent({ className, side, sideOffset, align, alignOffset, anchor, ...props }: Combobox_2.Popup.Props & Pick<Combobox_2.Positioner.Props, "side" | "align" | "sideOffset" | "alignOffset" | "anchor">): JSX.Element;
+
+export declare function ComboboxEmpty({ className, ...props }: Combobox_2.Empty.Props): JSX.Element;
+
+export declare function ComboboxGroup({ className, ...props }: Combobox_2.Group.Props): JSX.Element;
+
+export declare function ComboboxInput({ className, children, disabled, showTrigger, showClear, ...props }: Combobox_2.Input.Props & {
+    showTrigger?: boolean;
+    showClear?: boolean;
+}): JSX.Element;
+
+export declare function ComboboxItem({ className, children, ...props }: Combobox_2.Item.Props): JSX.Element;
+
+export declare function ComboboxLabel({ className, ...props }: Combobox_2.GroupLabel.Props): JSX.Element;
+
+export declare function ComboboxList({ className, ...props }: Combobox_2.List.Props): JSX.Element;
+
+export declare function ComboboxSeparator({ className, ...props }: Combobox_2.Separator.Props): JSX.Element;
+
+export declare function ComboboxTrigger({ className, children, ...props }: Combobox_2.Trigger.Props): JSX.Element;
+
+export declare function ComboboxValue({ ...props }: Combobox_2.Value.Props): JSX.Element;
+
 export declare function Command({ className, ...props }: React_2.ComponentProps<typeof Command_2>): JSX.Element;
 
 export declare function CommandDialog({ title, description, children, className, showCloseButton, ...props }: React_2.ComponentProps<typeof Dialog> & {
@@ -452,7 +488,7 @@ export declare function InputGroup({ className, ...props }: React_2.ComponentPro
 export declare function InputGroupAddon({ className, align, ...props }: React_2.ComponentProps<"div"> & VariantProps<typeof inputGroupAddonVariants>): JSX.Element;
 
 declare const inputGroupAddonVariants: (props?: ({
-    align?: "inline-end" | "inline-start" | "block-end" | "block-start" | null | undefined;
+    align?: "inline-start" | "inline-end" | "block-start" | "block-end" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function InputGroupButton({ className, type, variant, size, ...props }: Omit<React_2.ComponentProps<typeof Button>, "size"> & VariantProps<typeof inputGroupButtonVariants>): JSX.Element;
@@ -827,6 +863,8 @@ export declare function TooltipProvider({ delayDuration, ...props }: React_2.Com
 export declare function TooltipTrigger({ ...props }: React_2.ComponentProps<typeof TooltipPrimitive.Trigger>): JSX.Element;
 
 declare type UseCarouselParameters = Parameters<typeof default_2>;
+
+export declare function useComboboxAnchor(): React_2.RefObject<HTMLDivElement | null>;
 
 export declare const useFormField: () => {
     invalid: boolean;

@@ -11,6 +11,7 @@ export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrev
 export { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent, ChartStyle } from './ui/chart'
 export { Checkbox } from './ui/checkbox'
 export { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible'
+export { Combobox, ComboboxInput, ComboboxContent, ComboboxList, ComboboxItem, ComboboxGroup, ComboboxLabel, ComboboxCollection, ComboboxEmpty, ComboboxSeparator, ComboboxChips, ComboboxChip, ComboboxChipsInput, ComboboxTrigger, ComboboxValue, useComboboxAnchor } from './ui/combobox'
 export { Command, CommandDialog, CommandInput, CommandList, CommandEmpty, CommandGroup, CommandItem, CommandShortcut, CommandSeparator } from './ui/command'
 export { ContextMenu, ContextMenuTrigger, ContextMenuContent, ContextMenuItem, ContextMenuCheckboxItem, ContextMenuRadioItem, ContextMenuLabel, ContextMenuSeparator, ContextMenuShortcut, ContextMenuGroup, ContextMenuPortal, ContextMenuSub, ContextMenuSubContent, ContextMenuSubTrigger, ContextMenuRadioGroup } from './ui/context-menu'
 export { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage, useFormField } from './ui/form'
