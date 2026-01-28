@@ -22636,7 +22636,7 @@ function cee({
   showClear: o = !1,
   ...a
 }) {
-  return /* @__PURE__ */ we(lU, { className: T("w-auto m-2! rounded-lg!", e), children: [
+  return /* @__PURE__ */ we(lU, { className: T("w-auto m-2!", e), children: [
     /* @__PURE__ */ m(
       bg,
       {
