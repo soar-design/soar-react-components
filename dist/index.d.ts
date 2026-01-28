@@ -88,7 +88,7 @@ export declare function AlertDialogTrigger({ ...props }: React_2.ComponentProps<
 
 export declare function AlertTitle({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
-declare const alertVariants: (props?: ({
+export declare const alertVariants: (props?: ({
     variant?: "default" | "destructive" | null | undefined;
 } & ClassProp) | undefined) => string;
 
@@ -196,7 +196,7 @@ declare type CarouselProps = {
     setApi?: (api: CarouselApi) => void;
 };
 
-declare type ChartConfig = {
+export declare type ChartConfig = {
     [k in string]: {
         label?: React_2.ReactNode;
         icon?: React_2.ComponentType;
@@ -654,6 +654,12 @@ export declare function PopoverAnchor({ ...props }: React_2.ComponentProps<typeo
 
 export declare function PopoverContent({ className, align, sideOffset, ...props }: React_2.ComponentProps<typeof PopoverPrimitive.Content>): JSX.Element;
 
+export declare function PopoverDescription({ className, ...props }: React_2.ComponentProps<"p">): JSX.Element;
+
+export declare function PopoverHeader({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+
+export declare function PopoverTitle({ className, ...props }: React_2.ComponentProps<"h2">): JSX.Element;
+
 export declare function PopoverTrigger({ ...props }: React_2.ComponentProps<typeof PopoverPrimitive.Trigger>): JSX.Element;
 
 export declare function Progress({ className, value, ...props }: React_2.ComponentProps<typeof ProgressPrimitive.Root>): JSX.Element;
@@ -835,7 +841,7 @@ export declare function TabsContent({ className, ...props }: React_2.ComponentPr
 
 export declare function TabsList({ className, variant, ...props }: React_2.ComponentProps<typeof TabsPrimitive.List> & VariantProps<typeof tabsListVariants>): JSX.Element;
 
-declare const tabsListVariants: (props?: ({
+export declare const tabsListVariants: (props?: ({
     variant?: "line" | "default" | null | undefined;
 } & ClassProp) | undefined) => string;
 
