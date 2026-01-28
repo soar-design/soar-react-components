@@ -15415,7 +15415,7 @@ function qF({
     {
       "data-slot": "command",
       className: R(
-        "bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden border border-border rounded-2xl",
+        "bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden rounded-2xl",
         e
       ),
       ...t
