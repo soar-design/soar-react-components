@@ -36571,7 +36571,7 @@ function yre({
       "data-slot": "dropdown-menu-label",
       "data-inset": t,
       className: T(
-        "px-2 py-1.5 text-sm font-medium data-[inset]:ps-8",
+        "px-2 py-1.5 text-xs text-muted-foreground font-medium data-[inset]:ps-8",
         e
       ),
       ...n
@@ -36630,7 +36630,7 @@ function Cre({
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "me-auto size-4" })
+        /* @__PURE__ */ m(oa, { className: "ms-auto size-4" })
       ]
     }
   );
