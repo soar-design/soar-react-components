@@ -36554,7 +36554,7 @@ function bre({
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(uo, { className: "size-2" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(uo, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -36600,7 +36600,7 @@ function xre({
     {
       "data-slot": "dropdown-menu-shortcut",
       className: T(
-        "text-muted-foreground me-auto text-xs tracking-widest",
+        "text-muted-foreground ms-auto text-xs tracking-widest",
         e
       ),
       ...t
