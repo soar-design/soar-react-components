@@ -8762,7 +8762,8 @@ function YJ({
           // Today is range start → rounded-s-full
           "[&_button[data-range-start=true]]:rounded-s-full",
           // Today is alone (not in range) → rounded-full
-          "[&_button:not([data-range-start]):not([data-range-end]):not([data-range-middle])]:rounded-full",
+          // This covers both unselected today and selected-single today
+          "[&_button[data-today=true]:not([data-range-start]):not([data-range-end]):not([data-range-middle])]:rounded-full",
           l.today
         ),
         outside: T(
@@ -8824,7 +8825,7 @@ function kF({
       "data-range-middle": n.range_middle,
       "data-today": n.today,
       className: T(
-        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-full data-[range-end=true]:rounded-e-full data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-full data-[range-start=true]:rounded-s-full [&>span]:text-xs [&>span]:opacity-70",
+        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-full data-[range-end=true]:rounded-e-full data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-full data-[range-start=true]:rounded-s-full data-[today=true]:data-[selected-single=true]:rounded-full data-[today=true]:not([data-range-start]):not([data-range-end]):not([data-range-middle]):rounded-full [&>span]:text-xs [&>span]:opacity-70",
         o.day,
         e
       ),
