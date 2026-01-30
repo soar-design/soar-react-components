@@ -27377,14 +27377,14 @@ function n8({
     "div",
     {
       className: T(
-        "absolute top-full start-0 isolate z-50 flex justify-center"
+        "absolute top-full start-0 isolate z-50"
       ),
       children: /* @__PURE__ */ m(
         e8,
         {
           "data-slot": "navigation-menu-viewport",
           className: T(
-            "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-md border shadow md:w-(--radix-navigation-menu-viewport-width)",
+            "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
             e
           ),
           ...t
