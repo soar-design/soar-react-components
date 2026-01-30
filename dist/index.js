@@ -8688,7 +8688,7 @@ function YJ({
         ...a
       },
       classNames: {
-        root: T("w-fit rounded-2xl shadow-xl", l.root),
+        root: T("w-fit", l.root),
         months: T(
           "flex gap-4 flex-col md:flex-row relative",
           l.months
