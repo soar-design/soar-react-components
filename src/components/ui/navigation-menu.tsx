@@ -103,6 +103,68 @@ function NavigationMenuViewport({
   className,
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>) {
+  const viewportRef = React.useRef<HTMLDivElement>(null)
+
+  React.useLayoutEffect(() => {
+    if (!viewportRef.current) return
+
+    const viewport = viewportRef.current
+
+    // Find the actual content element inside the viewport
+    const findContentElement = (): HTMLElement | null => {
+      // Radix renders content inside the viewport - look for it
+      // Could be a direct child or nested in Presence wrapper
+      const content =
+        (viewport.querySelector(
+          '[data-slot="navigation-menu-content"]'
+        ) as HTMLElement | null) ||
+        (viewport.firstElementChild as HTMLElement | null)
+      return content
+    }
+
+    const measure = () => {
+      const content = findContentElement()
+      if (!content) return
+
+      // Only measure if content is visible
+      if (content.offsetWidth > 0 && content.offsetHeight > 0) {
+        viewport.style.setProperty(
+          "--radix-navigation-menu-viewport-width",
+          `${content.offsetWidth}px`
+        )
+        viewport.style.setProperty(
+          "--radix-navigation-menu-viewport-height",
+          `${content.offsetHeight}px`
+        )
+      }
+    }
+
+    // Use ResizeObserver on the viewport to detect when content appears/changes
+    const resizeObserver = new ResizeObserver(() => {
+      requestAnimationFrame(measure)
+    })
+
+    resizeObserver.observe(viewport)
+
+    // Also measure when content is added/removed
+    const mutationObserver = new MutationObserver(() => {
+      requestAnimationFrame(measure)
+    })
+
+    mutationObserver.observe(viewport, {
+      childList: true,
+      subtree: true,
+    })
+
+    // Initial measurement attempt
+    requestAnimationFrame(measure)
+
+    return () => {
+      resizeObserver.disconnect()
+      mutationObserver.disconnect()
+    }
+  }, [])
+
   return (
     <div
       className={cn(
@@ -110,9 +172,10 @@ function NavigationMenuViewport({
       )}
     >
       <NavigationMenuPrimitive.Viewport
+        ref={viewportRef}
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-md border shadow md:w-(--radix-navigation-menu-viewport-width)",
+          "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
           className
         )}
         {...props}

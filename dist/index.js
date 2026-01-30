@@ -27373,7 +27373,34 @@ function n8({
   className: e,
   ...t
 }) {
-  return /* @__PURE__ */ m(
+  const n = u.useRef(null);
+  return u.useLayoutEffect(() => {
+    if (!n.current) return;
+    const r = n.current, o = () => r.querySelector(
+      '[data-slot="navigation-menu-content"]'
+    ) || r.firstElementChild, a = () => {
+      const l = o();
+      l && l.offsetWidth > 0 && l.offsetHeight > 0 && (r.style.setProperty(
+        "--radix-navigation-menu-viewport-width",
+        `${l.offsetWidth}px`
+      ), r.style.setProperty(
+        "--radix-navigation-menu-viewport-height",
+        `${l.offsetHeight}px`
+      ));
+    }, i = new ResizeObserver(() => {
+      requestAnimationFrame(a);
+    });
+    i.observe(r);
+    const s = new MutationObserver(() => {
+      requestAnimationFrame(a);
+    });
+    return s.observe(r, {
+      childList: !0,
+      subtree: !0
+    }), requestAnimationFrame(a), () => {
+      i.disconnect(), s.disconnect();
+    };
+  }, []), /* @__PURE__ */ m(
     "div",
     {
       className: T(
@@ -27382,9 +27409,10 @@ function n8({
       children: /* @__PURE__ */ m(
         e8,
         {
+          ref: n,
           "data-slot": "navigation-menu-viewport",
           className: T(
-            "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-md border shadow md:w-(--radix-navigation-menu-viewport-width)",
+            "origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow md:w-[var(--radix-navigation-menu-viewport-width)]",
             e
           ),
           ...t
