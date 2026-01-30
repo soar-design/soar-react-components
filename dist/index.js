@@ -8756,7 +8756,7 @@ function YJ({
         range_middle: T("rounded-none", l.range_middle),
         range_end: T("rounded-e-full bg-accent", l.range_end),
         today: T(
-          "bg-accent text-accent-foreground rounded-full data-[selected=true]:rounded-none [&:last-child[data-selected=true]_button]:rounded-e-full [&:first-child[data-selected=true]_button]:rounded-s-full",
+          "bg-accent text-accent-foreground [&:last-child[data-selected=true]_button]:rounded-e-full [&:first-child[data-selected=true]_button]:rounded-s-full",
           l.today
         ),
         outside: T(
