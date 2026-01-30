@@ -27377,7 +27377,7 @@ function n8({
     "div",
     {
       className: T(
-        "absolute top-full left-0 isolate z-50 flex justify-center w-full"
+        "absolute top-full left-0 isolate z-50 flex justify-center"
       ),
       children: /* @__PURE__ */ m(
         e8,
