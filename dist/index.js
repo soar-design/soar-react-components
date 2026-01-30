@@ -8717,7 +8717,7 @@ function YJ({
           l.dropdowns
         ),
         dropdown_root: T(
-          "relative has-focus:border-ring border border-input shadow-xs has-focus:ring-ring/50 has-focus:ring-[3px] rounded-md",
+          "relative has-focus:border-ring border border-input has-focus:ring-ring/50 has-focus:ring-[3px] rounded-full",
           l.dropdown_root
         ),
         dropdown: T(
@@ -8726,13 +8726,13 @@ function YJ({
         ),
         caption_label: T(
           "select-none font-medium",
-          r === "label" ? "text-sm" : "rounded-md ps-2 pe-1 flex items-center gap-1 text-sm h-8 [&>svg]:text-muted-foreground [&>svg]:size-3.5",
+          r === "label" ? "text-sm" : "rounded-full ps-2 pe-1 flex items-center gap-1 text-sm h-8 [&>svg]:text-muted-foreground [&>svg]:size-3.5",
           l.caption_label
         ),
         table: "w-full border-collapse",
         weekdays: T("flex", l.weekdays),
         weekday: T(
-          "text-muted-foreground rounded-md flex-1 font-normal text-[0.8rem] select-none",
+          "text-muted-foreground rounded-full flex-1 font-normal text-[0.8rem] select-none",
           l.weekday
         ),
         week: T("flex w-full mt-2", l.week),
@@ -8745,18 +8745,18 @@ function YJ({
           l.week_number
         ),
         day: T(
-          "relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-e-md group/day aspect-square select-none",
-          s.showWeekNumber ? "[&:nth-child(2)[data-selected=true]_button]:rounded-s-md" : "[&:first-child[data-selected=true]_button]:rounded-s-md",
+          "relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-e-full group/day aspect-square select-none",
+          s.showWeekNumber ? "[&:nth-child(2)[data-selected=true]_button]:rounded-s-full" : "[&:first-child[data-selected=true]_button]:rounded-s-full",
           l.day
         ),
         range_start: T(
-          "rounded-s-md bg-accent",
+          "rounded-s-full bg-accent",
           l.range_start
         ),
         range_middle: T("rounded-none", l.range_middle),
-        range_end: T("rounded-e-md bg-accent", l.range_end),
+        range_end: T("rounded-e-full bg-accent", l.range_end),
         today: T(
-          "bg-accent text-accent-foreground rounded-md data-[selected=true]:rounded-none",
+          "bg-accent text-accent-foreground rounded-full data-[selected=true]:rounded-none",
           l.today
         ),
         outside: T(
@@ -8817,7 +8817,7 @@ function kF({
       "data-range-end": n.range_end,
       "data-range-middle": n.range_middle,
       className: T(
-        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-e-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-s-md [&>span]:text-xs [&>span]:opacity-70",
+        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-full data-[range-end=true]:rounded-e-full data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-full data-[range-start=true]:rounded-s-full [&>span]:text-xs [&>span]:opacity-70",
         o.day,
         e
       ),
