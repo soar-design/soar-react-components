@@ -862,7 +862,7 @@ export declare const Toaster: ({ ...props }: ToasterProps) => JSX.Element;
 
 export declare function Toggle({ className, variant, size, ...props }: React_2.ComponentProps<typeof TogglePrimitive.Root> & VariantProps<typeof toggleVariants>): JSX.Element;
 
-export declare function ToggleGroup({ className, variant, size, spacing, children, ...props }: React_2.ComponentProps<typeof ToggleGroupPrimitive.Root> & VariantProps<typeof toggleVariants> & {
+export declare function ToggleGroup({ className, variant, size, spacing, orientation, children, ...props }: React_2.ComponentProps<typeof ToggleGroupPrimitive.Root> & VariantProps<typeof toggleVariants> & {
     spacing?: number;
 }): JSX.Element;
 

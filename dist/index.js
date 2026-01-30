@@ -34224,15 +34224,17 @@ var QS = P.forwardRef(
 const JT = u.createContext({
   size: "default",
   variant: "default",
-  spacing: 0
+  spacing: 0,
+  orientation: "horizontal"
 });
 function Qne({
   className: e,
   variant: t,
   size: n,
   spacing: r = 0,
-  children: o,
-  ...a
+  orientation: o = "horizontal",
+  children: a,
+  ...i
 }) {
   return /* @__PURE__ */ m(
     JX,
@@ -34241,13 +34243,16 @@ function Qne({
       "data-variant": t,
       "data-size": n,
       "data-spacing": r,
+      "data-orientation": o,
+      orientation: o,
       style: { "--gap": r },
       className: T(
         "group/toggle-group flex w-fit items-center gap-[--spacing(var(--gap))] rounded-md data-[spacing=default]:data-[variant=outline]:shadow-xs",
+        o === "vertical" && "flex-col",
         e
       ),
-      ...a,
-      children: /* @__PURE__ */ m(JT.Provider, { value: { variant: t, size: n, spacing: r }, children: o })
+      ...i,
+      children: /* @__PURE__ */ m(JT.Provider, { value: { variant: t, size: n, spacing: r, orientation: o }, children: a })
     }
   );
 }
@@ -34258,7 +34263,7 @@ function Jne({
   size: r,
   ...o
 }) {
-  const a = u.useContext(JT);
+  const a = u.useContext(JT), i = a.orientation || "horizontal";
   return /* @__PURE__ */ m(
     eZ,
     {
@@ -34272,7 +34277,11 @@ function Jne({
           size: a.size || r
         }),
         "w-auto min-w-0 shrink-0 px-3 focus:z-10 focus-visible:z-10",
-        "data-[spacing=0]:rounded-none data-[spacing=0]:shadow-none data-[spacing=0]:first:rounded-s-md data-[spacing=0]:last:rounded-e-md data-[spacing=0]:data-[variant=outline]:border-s-0 data-[spacing=0]:data-[variant=outline]:first:border-s",
+        "data-[spacing=0]:rounded-none data-[spacing=0]:shadow-none",
+        // Horizontal orientation
+        i === "horizontal" && "data-[spacing=0]:first:rounded-s-md data-[spacing=0]:last:rounded-e-md data-[spacing=0]:data-[variant=outline]:border-s-0 data-[spacing=0]:data-[variant=outline]:first:border-s",
+        // Vertical orientation
+        i === "vertical" && "data-[spacing=0]:first:rounded-t-md data-[spacing=0]:last:rounded-b-md data-[spacing=0]:data-[variant=outline]:border-t-0 data-[spacing=0]:data-[variant=outline]:first:border-t",
         e
       ),
       ...o,
