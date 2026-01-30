@@ -41,7 +41,7 @@ function ToggleGroup({
       orientation={orientation}
       style={{ "--gap": spacing } as React.CSSProperties}
       className={cn(
-        "group/toggle-group flex w-fit items-center gap-[--spacing(var(--gap))] rounded-md data-[spacing=default]:data-[variant=outline]:shadow-xs",
+        "group/toggle-group flex w-fit items-center gap-[--spacing(var(--gap))] rounded-2xl",
         orientation === "vertical" && "flex-col",
         className
       )}
@@ -80,10 +80,10 @@ function ToggleGroupItem({
         "data-[spacing=0]:rounded-none data-[spacing=0]:shadow-none",
         // Horizontal orientation
         orientation === "horizontal" &&
-          "data-[spacing=0]:first:rounded-s-md data-[spacing=0]:last:rounded-e-md data-[spacing=0]:data-[variant=outline]:border-s-0 data-[spacing=0]:data-[variant=outline]:first:border-s",
+          "data-[spacing=0]:first:rounded-s-2xl data-[spacing=0]:last:rounded-e-2xl data-[spacing=0]:data-[variant=outline]:border-s-0 data-[spacing=0]:data-[variant=outline]:first:border-s",
         // Vertical orientation
         orientation === "vertical" &&
-          "data-[spacing=0]:first:rounded-t-md data-[spacing=0]:last:rounded-b-md data-[spacing=0]:data-[variant=outline]:border-t-0 data-[spacing=0]:data-[variant=outline]:first:border-t",
+          "data-[spacing=0]:first:rounded-t-2xl data-[spacing=0]:last:rounded-b-2xl data-[spacing=0]:data-[variant=outline]:border-t-0 data-[spacing=0]:data-[variant=outline]:first:border-t",
         className
       )}
       {...props}
