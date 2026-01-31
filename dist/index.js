@@ -33847,7 +33847,7 @@ function Une({
   );
 }
 const MX = Yt(
-  "rounded-2xl p-1 group-data-[orientation=horizontal]/tabs:h-9 data-[variant=line]:rounded-none group/tabs-list text-muted-foreground inline-flex w-fit items-center justify-center group-data-[orientation=vertical]/tabs:h-fit group-data-[orientation=vertical]/tabs:flex-col",
+  "rounded-2xl p-1 group-data-[orientation=horizontal]/tabs:h-9 data-[variant=line]:rounded-none group/tabs-list text-muted-foreground inline-flex w-fit items-center justify-center group-data-[orientation=vertical]/tabs:h-fit group-data-[orientation=vertical]/tabs:flex-col relative",
   {
     variants: {
       variant: {
@@ -33865,13 +33865,70 @@ function Kne({
   variant: t = "default",
   ...n
 }) {
-  return /* @__PURE__ */ m(
+  const r = u.useRef(null), o = u.useRef(null), [a, i] = u.useState({
+    opacity: 0
+  });
+  return u.useEffect(() => {
+    const s = () => {
+      var h;
+      if (!r.current || !o.current) return;
+      const c = r.current.querySelector(
+        '[data-state="active"]'
+      );
+      if (!c) {
+        i({ opacity: 0 });
+        return;
+      }
+      const f = r.current.getBoundingClientRect(), d = c.getBoundingClientRect(), p = ((h = r.current.closest("[data-orientation]")) == null ? void 0 : h.getAttribute(
+        "data-orientation"
+      )) || "horizontal";
+      i(p === "horizontal" ? {
+        left: `${d.left - f.left}px`,
+        width: `${d.width}px`,
+        height: `${d.height}px`,
+        top: `${d.top - f.top}px`,
+        opacity: 1
+      } : {
+        top: `${d.top - f.top}px`,
+        height: `${d.height}px`,
+        left: `${d.left - f.left}px`,
+        width: `${d.width}px`,
+        opacity: 1
+      });
+    };
+    s();
+    const l = new MutationObserver(s);
+    return r.current && l.observe(r.current, {
+      attributes: !0,
+      attributeFilter: ["data-state"],
+      subtree: !0
+    }), window.addEventListener("resize", s), () => {
+      l.disconnect(), window.removeEventListener("resize", s);
+    };
+  }, []), /* @__PURE__ */ we(
     NX,
     {
+      ref: r,
       "data-slot": "tabs-list",
       "data-variant": t,
       className: T(MX({ variant: t }), e),
-      ...n
+      ...n,
+      children: [
+        /* @__PURE__ */ m(
+          "div",
+          {
+            ref: o,
+            className: T(
+              "pointer-events-none absolute rounded-3xl bg-background shadow-lg transition-all duration-200 ease-out",
+              "group-data-[variant=default]/tabs-list:block",
+              "group-data-[variant=line]/tabs-list:hidden"
+            ),
+            style: a,
+            "aria-hidden": "true"
+          }
+        ),
+        n.children
+      ]
     }
   );
 }
@@ -33884,9 +33941,9 @@ function Yne({
     {
       "data-slot": "tabs-trigger",
       className: T(
-        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring text-foreground/60 hover:text-foreground dark:text-muted-foreground dark:hover:text-foreground relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-3xl border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-lg group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring text-foreground/60 hover:text-foreground dark:text-muted-foreground dark:hover:text-foreground relative z-10 inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-3xl border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-colors group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         "group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent dark:group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent",
-        "data-[state=active]:bg-background dark:data-[state=active]:text-foreground data-[state=active]:text-foreground",
+        "group-data-[variant=default]/tabs-list:data-[state=active]:bg-transparent dark:data-[state=active]:text-foreground data-[state=active]:text-foreground",
         "after:bg-foreground after:absolute after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-end-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100",
         e
       ),
