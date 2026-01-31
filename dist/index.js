@@ -35079,7 +35079,7 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
         "--normal-bg": "var(--popover)",
         "--normal-text": "var(--popover-foreground)",
         "--normal-border": "var(--border)",
-        "--border-radius": "var(--radius-2xl)"
+        "--border-radius": "16px"
       },
       ...e
     }
