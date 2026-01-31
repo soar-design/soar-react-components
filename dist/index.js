@@ -35076,17 +35076,17 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
         loading: /* @__PURE__ */ m(PC, { className: "size-4 animate-spin" })
       },
       toastOptions: {
+        ...e,
         classNames: {
+          ...e == null ? void 0 : e.classNames,
           toast: "!rounded-2xl",
           actionButton: "!rounded-full",
-          cancelButton: "!rounded-full",
-          ...e == null ? void 0 : e.classNames
+          cancelButton: "!rounded-full"
         },
         style: {
-          boxShadow: "var(--shadow-2xl)",
-          ...e == null ? void 0 : e.style
-        },
-        ...e
+          ...e == null ? void 0 : e.style,
+          boxShadow: "var(--shadow-2xl)"
+        }
       },
       ...t
     }

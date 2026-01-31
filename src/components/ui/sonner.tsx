@@ -23,17 +23,17 @@ const Toaster = ({ toastOptions, ...props }: ToasterProps) => {
         loading: <Loader2Icon className="size-4 animate-spin" />,
       }}
       toastOptions={{
+        ...toastOptions,
         classNames: {
+          ...toastOptions?.classNames,
           toast: "!rounded-2xl",
           actionButton: "!rounded-full",
           cancelButton: "!rounded-full",
-          ...toastOptions?.classNames,
         },
         style: {
-          boxShadow: "var(--shadow-2xl)",
           ...toastOptions?.style,
+          boxShadow: "var(--shadow-2xl)",
         },
-        ...toastOptions,
       }}
       {...props}
     />
