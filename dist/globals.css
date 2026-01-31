@@ -212,7 +212,11 @@
     }
 }
 
-/* Sonner toast button overrides */
+/* Sonner toast overrides */
+[data-sonner-toast][data-styled='true'] {
+  border-radius: var(--radius-2xl) !important;
+}
+
 [data-sonner-toast][data-styled='true'] [data-button][data-action],
 [data-sonner-toast][data-styled='true'] [data-button][data-cancel] {
   border-radius: 9999px !important;

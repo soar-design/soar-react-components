@@ -35078,12 +35078,10 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
       style: {
         "--normal-bg": "var(--popover)",
         "--normal-text": "var(--popover-foreground)",
-        "--normal-border": "var(--border)"
+        "--normal-border": "var(--border)",
+        "--border-radius": "var(--radius-2xl)"
       },
       toastOptions: {
-        style: {
-          "--border-radius": "var(--radius-2xl)"
-        },
         actionButtonStyle: {
           borderRadius: "9999px"
         },
