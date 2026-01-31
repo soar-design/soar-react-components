@@ -858,7 +858,7 @@ declare const THEMES: {
 
 export { toast }
 
-export declare const Toaster: ({ ...props }: ToasterProps) => JSX.Element;
+export declare const Toaster: ({ toastOptions, ...props }: ToasterProps) => JSX.Element;
 
 export declare function Toggle({ className, variant, size, ...props }: React_2.ComponentProps<typeof TogglePrimitive.Root> & VariantProps<typeof toggleVariants>): JSX.Element;
 

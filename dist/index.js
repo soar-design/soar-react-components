@@ -35061,12 +35061,12 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
       });
     })) : null;
   }));
-}), tre = ({ ...e }) => {
-  const { theme: t = "system" } = oZ();
+}), tre = ({ toastOptions: e, ...t }) => {
+  const { theme: n = "system" } = oZ();
   return /* @__PURE__ */ m(
     IZ,
     {
-      theme: t,
+      theme: n,
       className: "toaster group",
       icons: {
         success: /* @__PURE__ */ m(fA, { className: "size-4" }),
@@ -35075,15 +35075,20 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
         error: /* @__PURE__ */ m(CA, { className: "size-4" }),
         loading: /* @__PURE__ */ m(PC, { className: "size-4 animate-spin" })
       },
-      style: {
-        "--normal-bg": "var(--popover)",
-        "--normal-text": "var(--popover-foreground)",
-        "--normal-border": "var(--border)",
-        "--border-radius": "var(--radius-2xl)",
-        "--action-border-radius": "var(--radius-full, 9999px)",
-        "--shadow": "var(--shadow-2xl)"
+      toastOptions: {
+        classNames: {
+          toast: "!rounded-2xl",
+          actionButton: "!rounded-full",
+          cancelButton: "!rounded-full",
+          ...e == null ? void 0 : e.classNames
+        },
+        style: {
+          boxShadow: "var(--shadow-2xl)",
+          ...e == null ? void 0 : e.style
+        },
+        ...e
       },
-      ...e
+      ...t
     }
   );
 };
