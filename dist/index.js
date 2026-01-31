@@ -33507,7 +33507,7 @@ function Fne({
         {
           "data-slot": "switch-thumb",
           className: T(
-            "bg-background dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-primary-foreground pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 group-data-[size=default]/switch:data-[state=checked]:translate-x-[17px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[1px]"
+            "bg-background dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-primary-foreground pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 group-data-[size=default]/switch:data-[state=checked]:translate-x-[17px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[1px] rtl:group-data-[size=default]/switch:data-[state=checked]:-translate-x-[17px] rtl:group-data-[size=sm]/switch:data-[state=checked]:-translate-x-[13px] rtl:data-[state=unchecked]:-translate-x-[1px]"
           )
         }
       )
