@@ -35067,7 +35067,7 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
     IZ,
     {
       theme: t,
-      className: "toaster group",
+      className: "toaster group rounded-2xl",
       icons: {
         success: /* @__PURE__ */ m(fA, { className: "size-4" }),
         info: /* @__PURE__ */ m(bA, { className: "size-4" }),
@@ -35078,8 +35078,8 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
       style: {
         "--normal-bg": "var(--popover)",
         "--normal-text": "var(--popover-foreground)",
-        "--normal-border": "var(--border)",
-        "--border-radius": "16px"
+        "--normal-border": "var(--border)"
+        // "--border-radius": "16px",
       },
       ...e
     }
