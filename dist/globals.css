@@ -215,6 +215,7 @@
 /* Sonner toast overrides */
 [data-sonner-toast][data-styled='true'] {
   border-radius: var(--radius-2xl) !important;
+  box-shadow: var(--shadow-xl) !important;
 }
 
 [data-sonner-toast][data-styled='true'] [data-button][data-action],
