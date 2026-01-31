@@ -211,3 +211,9 @@
     @apply bg-background text-foreground;
     }
 }
+
+/* Sonner toast button overrides */
+[data-sonner-toast][data-styled='true'] [data-button][data-action],
+[data-sonner-toast][data-styled='true'] [data-button][data-cancel] {
+  border-radius: 9999px !important;
+}

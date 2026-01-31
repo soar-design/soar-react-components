@@ -8,7 +8,7 @@ import {
 import { useTheme } from "next-themes"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
 
-const Toaster = ({ toastOptions, ...props }: ToasterProps) => {
+const Toaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme()
 
   return (
@@ -31,14 +31,11 @@ const Toaster = ({ toastOptions, ...props }: ToasterProps) => {
         } as React.CSSProperties
       }
       toastOptions={{
-        ...toastOptions,
         actionButtonStyle: {
           borderRadius: "9999px",
-          ...toastOptions?.actionButtonStyle,
         },
         cancelButtonStyle: {
           borderRadius: "9999px",
-          ...toastOptions?.cancelButtonStyle,
         },
       }}
       {...props}
