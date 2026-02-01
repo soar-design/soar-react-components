@@ -25157,13 +25157,13 @@ function Kee({
     {
       "data-slot": "context-menu-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(ra, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -25179,12 +25179,12 @@ function Yee({
     {
       "data-slot": "context-menu-radio-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
         t
       ]
     }
