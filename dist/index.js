@@ -22790,7 +22790,7 @@ function vee({
     {
       "data-slot": "combobox-item",
       className: T(
-        "data-highlighted:bg-accent data-highlighted:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "data-highlighted:bg-accent data-highlighted:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
@@ -22800,7 +22800,7 @@ function vee({
           BR,
           {
             "data-slot": "combobox-item-indicator",
-            render: /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-4 items-center justify-center" }),
+            render: /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-4 items-center justify-center" }),
             children: /* @__PURE__ */ m(Tr, { className: "pointer-events-none size-4 pointer-coarse:size-5" })
           }
         )
@@ -22858,7 +22858,7 @@ function See({
     VR,
     {
       "data-slot": "combobox-separator",
-      className: T("bg-border mx-4 my-1.5 h-px", e),
+      className: T("bg-border pointer-events-none mx-2 my-1.5 h-px", e),
       ...t
     }
   );
@@ -26365,13 +26365,13 @@ function bte({
     {
       "data-slot": "menubar-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -26424,7 +26424,7 @@ function xte({
     dY,
     {
       "data-slot": "menubar-separator",
-      className: T("bg-border mx-2 my-1.5 h-px", e),
+      className: T("bg-border pointer-events-none mx-2 my-1.5 h-px", e),
       ...t
     }
   );
@@ -31559,7 +31559,7 @@ function cne({
     D9,
     {
       "data-slot": "select-separator",
-      className: T("bg-border pointer-events-none -mx-1 my-1 h-px", e),
+      className: T("bg-border pointer-events-none mx-2 my-1.5 h-px", e),
       ...t
     }
   );
@@ -36622,13 +36622,13 @@ function gre({
     {
       "data-slot": "dropdown-menu-checkbox-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       checked: n,
       ...r,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -36655,12 +36655,12 @@ function bre({
     {
       "data-slot": "dropdown-menu-radio-item",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-8 ps-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-lg py-1.5 pe-2 ps-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         e
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute end-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(NI, { children: /* @__PURE__ */ m(Tr, { className: "size-4" }) }) }),
         t
       ]
     }
@@ -36692,7 +36692,7 @@ function wre({
     BQ,
     {
       "data-slot": "dropdown-menu-separator",
-      className: T("bg-border mx-2 my-1.5 h-px", e),
+      className: T("bg-border pointer-events-none mx-2 my-1.5 h-px", e),
       ...t
     }
   );
