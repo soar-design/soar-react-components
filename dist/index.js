@@ -5069,7 +5069,7 @@ function O$({
     {
       "data-slot": "alert-dialog-overlay",
       className: T(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-background/70 backdrop-blur-lg",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-white/70 dark:bg-black/70 backdrop-blur-lg backdrop-saturate-150",
         e
       ),
       ...t
@@ -23261,7 +23261,7 @@ function B3({
     {
       "data-slot": "dialog-overlay",
       className: T(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-background/70 backdrop-blur-lg",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-white/70 dark:bg-black/70 backdrop-blur-lg backdrop-saturate-150",
         e
       ),
       ...t
@@ -31662,7 +31662,7 @@ function j9({
     {
       "data-slot": "sheet-overlay",
       className: T(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-background/70 backdrop-blur-lg",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-white/70 dark:bg-black/70 backdrop-blur-lg backdrop-saturate-150",
         e
       ),
       ...t
@@ -36210,7 +36210,7 @@ function sQ({
     {
       "data-slot": "drawer-overlay",
       className: T(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-background/70 backdrop-blur-lg",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-white/70 dark:bg-black/70 backdrop-blur-lg backdrop-saturate-150",
         e
       ),
       ...t
