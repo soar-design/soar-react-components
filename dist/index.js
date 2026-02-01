@@ -25201,7 +25201,7 @@ function Xee({
       "data-slot": "context-menu-label",
       "data-inset": t,
       className: T(
-        "text-foreground px-2 py-1.5 text-sm font-medium data-[inset]:ps-8",
+        "text-muted-foreground px-2 py-1.5 text-xs font-medium data-[inset]:ps-8",
         e
       ),
       ...n
