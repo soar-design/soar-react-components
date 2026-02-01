@@ -26269,7 +26269,7 @@ function dte({
     {
       "data-slot": "menubar",
       className: T(
-        "bg-background flex h-9 items-center gap-1 rounded-md border p-1 shadow-xs",
+        "bg-background flex h-9 items-center gap-1 rounded-xl border p-1 shadow-xs",
         e
       ),
       ...t
@@ -26305,7 +26305,7 @@ function hte({
     {
       "data-slot": "menubar-trigger",
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex items-center rounded-sm px-2 py-1 text-sm font-medium outline-hidden select-none",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex items-center rounded-lg px-2 py-1 text-sm font-medium outline-hidden select-none",
         e
       ),
       ...t
@@ -26424,7 +26424,7 @@ function xte({
     dY,
     {
       "data-slot": "menubar-separator",
-      className: T("bg-border -mx-1 my-1 h-px", e),
+      className: T("bg-border mx-2 my-1.5 h-px", e),
       ...t
     }
   );
@@ -26462,13 +26462,13 @@ function Ete({
       "data-slot": "menubar-sub-trigger",
       "data-inset": t,
       className: T(
-        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-none select-none data-[inset]:ps-8",
+        "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-lg px-2 py-1.5 text-sm outline-none select-none data-[inset]:ps-8",
         e
       ),
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "me-auto h-4 w-4" })
+        /* @__PURE__ */ m(oa, { className: "ms-auto h-4 w-4" })
       ]
     }
   );
