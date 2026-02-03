@@ -33273,7 +33273,7 @@ function $ne({
               {
                 "data-slot": "slider-range",
                 className: T(
-                  "bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
+                  "bg-brand-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
                 )
               }
             )
