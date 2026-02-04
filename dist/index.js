@@ -5637,7 +5637,7 @@ function UJ({
       "data-slot": "breadcrumb-separator",
       role: "presentation",
       "aria-hidden": "true",
-      className: T("[&>svg]:size-3.5", t),
+      className: T("[&>svg]:size-3.5 [&>svg]:rtl:rotate-180", t),
       ...n,
       children: e ?? /* @__PURE__ */ m(oa, {})
     }
@@ -8783,10 +8783,10 @@ function YJ({
             ...d
           }
         ),
-        Chevron: ({ className: c, orientation: f, ...d }) => f === "left" ? /* @__PURE__ */ m(_C, { className: T("size-4", c), ...d }) : f === "right" ? /* @__PURE__ */ m(
+        Chevron: ({ className: c, orientation: f, ...d }) => f === "left" ? /* @__PURE__ */ m(_C, { className: T("size-4 rtl:rotate-180", c), ...d }) : f === "right" ? /* @__PURE__ */ m(
           oa,
           {
-            className: T("size-4", c),
+            className: T("size-4 rtl:rotate-180", c),
             ...d
           }
         ) : /* @__PURE__ */ m(uo, { className: T("size-4", c), ...d }),
@@ -25089,7 +25089,7 @@ function Hee({
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ms-auto size-4" })
+        /* @__PURE__ */ m(oa, { className: "ms-auto size-4 rtl:rotate-180" })
       ]
     }
   );
@@ -26468,7 +26468,7 @@ function Ete({
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ms-auto h-4 w-4" })
+        /* @__PURE__ */ m(oa, { className: "ms-auto h-4 w-4 rtl:rotate-180" })
       ]
     }
   );
@@ -27521,7 +27521,7 @@ function zte({
       className: T("gap-1 px-2.5 sm:ps-2.5", e),
       ...t,
       children: [
-        /* @__PURE__ */ m(_C, {}),
+        /* @__PURE__ */ m(_C, { className: "rtl:rotate-180" }),
         /* @__PURE__ */ m("span", { className: "hidden sm:block", children: "Previous" })
       ]
     }
@@ -27540,7 +27540,7 @@ function Vte({
       ...t,
       children: [
         /* @__PURE__ */ m("span", { className: "hidden sm:block", children: "Next" }),
-        /* @__PURE__ */ m(oa, {})
+        /* @__PURE__ */ m(oa, { className: "rtl:rotate-180" })
       ]
     }
   );
@@ -36736,7 +36736,7 @@ function Cre({
       ...r,
       children: [
         n,
-        /* @__PURE__ */ m(oa, { className: "ms-auto size-4" })
+        /* @__PURE__ */ m(oa, { className: "ms-auto size-4 rtl:rotate-180" })
       ]
     }
   );
