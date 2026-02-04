@@ -28379,7 +28379,7 @@ function Zte({
         {
           "data-slot": "radio-group-indicator",
           className: "relative flex items-center justify-center",
-          children: /* @__PURE__ */ m(Cl, { className: "fill-brand-primary absolute top-1/2 start-1/2 size-2 -translate-x-1/2 -translate-y-1/2" })
+          children: /* @__PURE__ */ m(Cl, { className: "fill-brand-primary stroke-brand-primary absolute top-1/2 start-1/2 size-2 -translate-x-1/2 -translate-y-1/2" })
         }
       )
     }
