@@ -37116,23 +37116,16 @@ function jre({
     }
   );
 }
-function Hre({
-  className: e,
-  size: t = "default",
-  ...n
-}) {
+function Hre({ className: e, ...t }) {
   return /* @__PURE__ */ m(
     "div",
     {
       "data-slot": "card",
-      "data-size": t,
       className: T(
-        "group/card bg-card text-card-foreground flex flex-col gap-6 rounded-3xl py-6",
-        "data-[size=sm]:gap-3 data-[size=sm]:py-3",
-        "has-data-[slot=card-footer]:pb-0",
+        "bg-card text-card-foreground flex flex-col gap-6 rounded-3xl py-6",
         e
       ),
-      ...n
+      ...t
     }
   );
 }
@@ -37143,7 +37136,6 @@ function qre({ className: e, ...t }) {
       "data-slot": "card-header",
       className: T(
         "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
-        "group-data-[size=sm]/card:px-3 group-data-[size=sm]/card:gap-1 group-data-[size=sm]/card:[.border-b]:pb-3",
         e
       ),
       ...t
@@ -37188,11 +37180,7 @@ function Yre({ className: e, ...t }) {
     "div",
     {
       "data-slot": "card-content",
-      className: T(
-        "px-6",
-        "group-data-[size=sm]/card:px-3",
-        e
-      ),
+      className: T("px-6", e),
       ...t
     }
   );
@@ -37202,11 +37190,7 @@ function Xre({ className: e, ...t }) {
     "div",
     {
       "data-slot": "card-footer",
-      className: T(
-        "flex items-center px-6 [.border-t]:pt-6",
-        "group-data-[size=sm]/card:px-3 group-data-[size=sm]/card:[.border-t]:pt-3",
-        e
-      ),
+      className: T("flex items-center px-6 [.border-t]:pt-6", e),
       ...t
     }
   );
