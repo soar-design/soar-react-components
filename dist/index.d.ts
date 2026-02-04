@@ -161,7 +161,9 @@ export declare function Calendar({ className, classNames, showOutsideDays, capti
 
 export declare function CalendarDayButton({ className, day, modifiers, ...props }: React_2.ComponentProps<typeof DayButton>): JSX.Element;
 
-export declare function Card({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
+export declare function Card({ className, size, ...props }: React_2.ComponentProps<"div"> & {
+    size?: "default" | "sm";
+}): JSX.Element;
 
 export declare function CardAction({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
