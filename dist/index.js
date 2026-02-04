@@ -31628,7 +31628,7 @@ function Rc({
       decorative: n,
       orientation: t,
       className: T(
-        "bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px",
+        "bg-secondary rounded-full shrink-0 data-[orientation=horizontal]:h-[1.5px] data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[1.5px]",
         e
       ),
       ...r
