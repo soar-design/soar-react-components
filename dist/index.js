@@ -33851,7 +33851,7 @@ const MX = Yt(
   {
     variants: {
       variant: {
-        default: "bg-secondary backdrop-blur-xl backdrop-saturate-150",
+        default: "bg-accent backdrop-blur-xl backdrop-saturate-150",
         line: "gap-1 bg-transparent"
       }
     },
