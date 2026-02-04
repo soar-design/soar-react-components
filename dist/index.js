@@ -25184,7 +25184,7 @@ function Yee({
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(u1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-brand-primary" }) }) }),
         t
       ]
     }
@@ -26269,7 +26269,7 @@ function dte({
     {
       "data-slot": "menubar",
       className: T(
-        "bg-background flex h-9 items-center gap-1 rounded-xl border p-1 shadow-xs",
+        "bg-background flex h-9 items-center gap-1 rounded-xl border p-1",
         e
       ),
       ...t
@@ -26327,7 +26327,7 @@ function gte({
       alignOffset: n,
       sideOffset: r,
       className: T(
-        "bg-popover backdrop-blur-xl backdrop-saturate-150 text-popover-foreground data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[12rem] origin-(--radix-menubar-content-transform-origin) rounded-xl border p-2 shadow-md",
+        "bg-popover backdrop-blur-xl backdrop-saturate-150 text-popover-foreground data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[12rem] origin-(--radix-menubar-content-transform-origin) rounded-xl border p-2 shadow-xl",
         e
       ),
       ...o
@@ -26392,7 +26392,7 @@ function yte({
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(K1, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-brand-primary" }) }) }),
         t
       ]
     }
@@ -26482,7 +26482,7 @@ function _te({
     {
       "data-slot": "menubar-sub-content",
       className: T(
-        "bg-popover backdrop-blur-xl backdrop-saturate-150 text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-xl border p-2 shadow-lg",
+        "bg-popover backdrop-blur-xl backdrop-saturate-150 text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-xl border p-2 shadow-xl",
         e
       ),
       ...t
@@ -36660,7 +36660,7 @@ function bre({
       ),
       ...n,
       children: [
-        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(TI, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-current" }) }) }),
+        /* @__PURE__ */ m("span", { className: "pointer-events-none absolute start-2 flex size-3.5 items-center justify-center", children: /* @__PURE__ */ m(TI, { children: /* @__PURE__ */ m(Cl, { className: "size-2 fill-brand-primary" }) }) }),
         t
       ]
     }
