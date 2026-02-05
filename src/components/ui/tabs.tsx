@@ -119,7 +119,7 @@ function TabsList({
       <div
         ref={indicatorRef}
         className={cn(
-          "pointer-events-none absolute rounded-3xl bg-background shadow-lg transition-all duration-200 ease-out",
+          "pointer-events-none absolute rounded-3xl bg-background transition-all duration-200 ease-out",
           "group-data-[variant=default]/tabs-list:block",
           "group-data-[variant=line]/tabs-list:hidden"
         )}
