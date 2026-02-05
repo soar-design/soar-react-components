@@ -15004,7 +15004,7 @@ function iee({
     {
       "data-slot": "checkbox",
       className: T(
-        "peer bg-secondary data-[state=checked]:bg-brand-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-brand-primary focus-visible:border-brand-border focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
+        "peer bg-secondary dark:data-[state=checked]:bg-primary focus-visible:border-brand-border focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
         e
       ),
       ...t,
@@ -15013,7 +15013,7 @@ function iee({
         {
           "data-slot": "checkbox-indicator",
           className: "grid place-content-center text-current transition-none",
-          children: /* @__PURE__ */ m(ra, { className: "size-3.5" })
+          children: /* @__PURE__ */ m(ra, { className: "size-3", strokeWidth: "4" })
         }
       )
     }
