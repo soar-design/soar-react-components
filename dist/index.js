@@ -15036,13 +15036,18 @@ function lee({
   );
 }
 function cee({
-  ...e
+  className: e,
+  ...t
 }) {
   return /* @__PURE__ */ m(
     eh,
     {
       "data-slot": "collapsible-content",
-      ...e
+      className: T(
+        "data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down overflow-hidden",
+        e
+      ),
+      ...t
     }
   );
 }
