@@ -5548,7 +5548,7 @@ const W$ = Yt(
     variants: {
       variant: {
         default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary-hover",
-        secondary: "border-transparent bg-secondary backdrop-blur-xl backdrop-saturate-150 backdrop-brightness-150 dark:backdrop-brightness-50 text-secondary-foreground [a&]:hover:bg-secondary/90",
+        secondary: "border-transparent bg-secondary backdrop-blur-xl backdrop-saturate-150 backdrop-brightness-200 dark:backdrop-brightness-50 text-secondary-foreground [a&]:hover:bg-secondary/90",
         destructive: "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive dark:bg-destructive/60",
         outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
       }
