@@ -5548,7 +5548,7 @@ const W$ = Yt(
     variants: {
       variant: {
         default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary-hover",
-        secondary: "border-transparent bg-secondary backdrop-blur-xl backdrop-saturate-[.5] backdrop-brightness-[2] dark:backdrop-brightness-[.25] mix-blend-lighten dark:mix-blend-darken text-secondary-foreground [a&]:hover:bg-secondary/90",
+        secondary: "border-transparent bg-secondary backdrop-blur-xl backdrop-saturate-[.5] backdrop-brightness-[2] dark:backdrop-brightness-[.25] text-secondary-foreground [a&]:hover:bg-secondary/90",
         destructive: "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive dark:bg-destructive/60",
         outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
       }
@@ -36755,7 +36755,7 @@ function Ere({
     {
       "data-slot": "dropdown-menu-sub-content",
       className: T(
-        "bg-popover backdrop-blur-xl backdrop-saturate-150 text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-2xl border p-2 shadow-xl",
+        "bg-popover backdrop-blur-xl backdrop-saturate-[.5] backdrop-brightness-[2] dark:backdrop-brightness-[.25] text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-2xl border p-2 shadow-xl",
         e
       ),
       ...t
