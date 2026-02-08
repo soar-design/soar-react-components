@@ -5006,7 +5006,7 @@ const Ls = Yt(
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline: "border bg-background hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-accent",
-        secondary: "bg-input backdrop-blur-xl backdrop-saturate-150 text-secondary-foreground hover:bg-secondary/80",
+        secondary: "bg-secondary backdrop-blur-xl backdrop-saturate-150 text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline"
       },
