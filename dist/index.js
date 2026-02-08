@@ -5015,7 +5015,7 @@ const Ls = Yt(
         xs: "h-8 gap-1 rounded-full px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-9 rounded-full gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-11 rounded-full px-6 has-[>svg]:px-4",
-        icon: "size-9",
+        icon: "size-10",
         "icon-xs": "size-8 rounded-full [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-9",
         "icon-lg": "size-11"
