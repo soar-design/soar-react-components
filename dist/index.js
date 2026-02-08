@@ -25244,25 +25244,25 @@ function Qee({
 }
 var XK = (e) => e.type === "checkbox", Aa = (e) => e instanceof Date, Jg = (e) => e == null;
 const d1 = (e) => typeof e == "object";
-var io = (e) => !Jg(e) && !Array.isArray(e) && d1(e) && !Aa(e), ZK = (e) => io(e) && e.target ? XK(e.target) ? e.target.checked : e.target.value : e, QK = (e) => e.substring(0, e.search(/\.\d+(\.|$)/)) || e, JK = (e, t) => e.has(QK(t)), eY = (e) => {
+var io = (e) => !Jg(e) && !Array.isArray(e) && d1(e) && !Aa(e), ZK = (e) => io(e) && e.target ? XK(e.target) ? e.target.checked : e.target.value : e, QK = (e) => e.substring(0, e.search(/\.\d+(\.|$)/)) || e, JK = (e, t) => e.has(QK(t)), e4 = (e) => {
   const t = e.constructor && e.constructor.prototype;
   return io(t) && t.hasOwnProperty("isPrototypeOf");
-}, tY = typeof window < "u" && typeof window.HTMLElement < "u" && typeof document < "u";
+}, t4 = typeof window < "u" && typeof window.HTMLElement < "u" && typeof document < "u";
 function f1(e) {
   if (e instanceof Date)
     return new Date(e);
   const t = typeof FileList < "u" && e instanceof FileList;
-  if (tY && (e instanceof Blob || t))
+  if (t4 && (e instanceof Blob || t))
     return e;
   const n = Array.isArray(e);
-  if (!n && !(io(e) && eY(e)))
+  if (!n && !(io(e) && e4(e)))
     return e;
   const r = n ? [] : Object.create(Object.getPrototypeOf(e));
   for (const o in e)
     Object.prototype.hasOwnProperty.call(e, o) && (r[o] = f1(e[o]));
   return r;
 }
-var p1 = (e) => /^\w*$/.test(e), Em = (e) => e === void 0, nY = (e) => Array.isArray(e) ? e.filter(Boolean) : [], m1 = (e) => nY(e.replace(/["|']|\]/g, "").split(/\.|\[/)), qt = (e, t, n) => {
+var p1 = (e) => /^\w*$/.test(e), Em = (e) => e === void 0, n4 = (e) => Array.isArray(e) ? e.filter(Boolean) : [], m1 = (e) => n4(e.replace(/["|']|\]/g, "").split(/\.|\[/)), qt = (e, t, n) => {
   if (!t || !io(e))
     return n;
   const r = (p1(t) ? [t] : m1(t)).reduce((o, a) => Jg(o) ? o : o[a], e);
@@ -25289,11 +25289,11 @@ const MS = {
   all: "all"
 }, ev = P.createContext(null);
 ev.displayName = "HookFormContext";
-const lc = () => P.useContext(ev), rY = (e) => {
+const lc = () => P.useContext(ev), r4 = (e) => {
   const { children: t, ...n } = e;
   return P.createElement(ev.Provider, { value: n }, t);
 };
-var oY = (e, t, n, r = !0) => {
+var o4 = (e, t, n, r = !0) => {
   const o = {
     defaultValues: t._defaultValues
   };
@@ -25330,9 +25330,9 @@ function g1(e) {
     }
   }), [o, r, a]), P.useEffect(() => {
     l.current.isValid && n._setValid(!0);
-  }, [n]), P.useMemo(() => oY(i, n, l.current, !1), [i, n]);
+  }, [n]), P.useMemo(() => o4(i, n, l.current, !1), [i, n]);
 }
-var aY = (e) => typeof e == "string", DS = (e, t, n, r, o) => aY(e) ? qt(n, e, o) : Array.isArray(e) ? e.map((a) => qt(n, a)) : n, kS = (e) => Jg(e) || !d1(e);
+var a4 = (e) => typeof e == "string", DS = (e, t, n, r, o) => a4(e) ? qt(n, e, o) : Array.isArray(e) ? e.map((a) => qt(n, a)) : n, kS = (e) => Jg(e) || !d1(e);
 function Is(e, t, n = /* @__PURE__ */ new WeakSet()) {
   if (kS(e) || kS(t))
     return Object.is(e, t);
@@ -25356,7 +25356,7 @@ function Is(e, t, n = /* @__PURE__ */ new WeakSet()) {
   }
   return !0;
 }
-function iY(e) {
+function i4(e) {
   const t = lc(), { control: n = t.control, name: r, defaultValue: o, disabled: a, exact: i, compute: s } = e || {}, l = P.useRef(o), c = P.useRef(s), f = P.useRef(void 0), d = P.useRef(n), p = P.useRef(r);
   c.current = s;
   const [h, v] = P.useState(() => {
@@ -25393,8 +25393,8 @@ function iY(e) {
   }, [a, y, r, w, g]);
   return x !== null ? x : h;
 }
-function sY(e) {
-  const t = lc(), { name: n, disabled: r, control: o = t.control, shouldUnregister: a, defaultValue: i, exact: s = !0 } = e, l = JK(o._names.array, n), c = P.useMemo(() => qt(o._formValues, n, qt(o._defaultValues, n, i)), [o, n, i]), f = iY({
+function s4(e) {
+  const t = lc(), { name: n, disabled: r, control: o = t.control, shouldUnregister: a, defaultValue: i, exact: s = !0 } = e, l = JK(o._names.array, n), c = P.useMemo(() => qt(o._formValues, n, qt(o._defaultValues, n, i)), [o, n, i]), f = i4({
     control: o,
     name: n,
     defaultValue: c,
@@ -25486,8 +25486,8 @@ function sY(e) {
     fieldState: g
   }), [x, d, g]);
 }
-const lY = (e) => e.render(sY(e));
-var cY = "Label", v1 = u.forwardRef((e, t) => /* @__PURE__ */ m(
+const l4 = (e) => e.render(s4(e));
+var c4 = "Label", v1 = u.forwardRef((e, t) => /* @__PURE__ */ m(
   kt.label,
   {
     ...e,
@@ -25498,14 +25498,14 @@ var cY = "Label", v1 = u.forwardRef((e, t) => /* @__PURE__ */ m(
     }
   }
 ));
-v1.displayName = cY;
-var uY = v1;
+v1.displayName = c4;
+var u4 = v1;
 function b1({
   className: e,
   ...t
 }) {
   return /* @__PURE__ */ m(
-    uY,
+    u4,
     {
       "data-slot": "label",
       className: T(
@@ -25516,11 +25516,11 @@ function b1({
     }
   );
 }
-const Jee = rY, y1 = u.createContext(
+const Jee = r4, y1 = u.createContext(
   {}
 ), ete = ({
   ...e
-}) => /* @__PURE__ */ m(y1.Provider, { value: { name: e.name }, children: /* @__PURE__ */ m(lY, { ...e }) }), cc = () => {
+}) => /* @__PURE__ */ m(y1.Provider, { value: { name: e.name }, children: /* @__PURE__ */ m(l4, { ...e }) }), cc = () => {
   const e = u.useContext(y1), t = u.useContext(w1), { getFieldState: n } = lc(), r = g1({ name: e.name }), o = n(e.name, r);
   if (!e)
     throw new Error("useFormField should be used within <FormField>");
@@ -25602,9 +25602,9 @@ function ate({ className: e, ...t }) {
   ) : null;
 }
 // @__NO_SIDE_EFFECTS__
-function dY(e) {
-  const t = /* @__PURE__ */ fY(e), n = u.forwardRef((r, o) => {
-    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(mY);
+function d4(e) {
+  const t = /* @__PURE__ */ f4(e), n = u.forwardRef((r, o) => {
+    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(m4);
     if (l) {
       const c = l.props.children, f = s.map((d) => d === l ? u.Children.count(c) > 1 ? u.Children.only(null) : u.isValidElement(c) ? c.props.children : null : d);
       return /* @__PURE__ */ m(t, { ...i, ref: o, children: u.isValidElement(c) ? u.cloneElement(c, void 0, f) : null });
@@ -25614,22 +25614,22 @@ function dY(e) {
   return n.displayName = `${e}.Slot`, n;
 }
 // @__NO_SIDE_EFFECTS__
-function fY(e) {
+function f4(e) {
   const t = u.forwardRef((n, r) => {
     const { children: o, ...a } = n;
     if (u.isValidElement(o)) {
-      const i = gY(o), s = hY(a, o.props);
+      const i = g4(o), s = h4(a, o.props);
       return o.type !== u.Fragment && (s.ref = r ? Ge(r, i) : i), u.cloneElement(o, s);
     }
     return u.Children.count(o) > 1 ? u.Children.only(null) : null;
   });
   return t.displayName = `${e}.SlotClone`, t;
 }
-var pY = Symbol("radix.slottable");
-function mY(e) {
-  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === pY;
+var p4 = Symbol("radix.slottable");
+function m4(e) {
+  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === p4;
 }
-function hY(e, t) {
+function h4(e, t) {
   const n = { ...t };
   for (const r in t) {
     const o = e[r], a = t[r];
@@ -25640,12 +25640,12 @@ function hY(e, t) {
   }
   return { ...e, ...n };
 }
-function gY(e) {
+function g4(e) {
   var r, o;
   let t = (r = Object.getOwnPropertyDescriptor(e.props, "ref")) == null ? void 0 : r.get, n = t && "isReactWarning" in t && t.isReactWarning;
   return n ? e.ref : (t = (o = Object.getOwnPropertyDescriptor(e, "ref")) == null ? void 0 : o.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-var vY = [
+var v4 = [
   "a",
   "button",
   "div",
@@ -25663,15 +25663,15 @@ var vY = [
   "span",
   "svg",
   "ul"
-], bY = vY.reduce((e, t) => {
-  const n = /* @__PURE__ */ dY(`Primitive.${t}`), r = u.forwardRef((o, a) => {
+], b4 = v4.reduce((e, t) => {
+  const n = /* @__PURE__ */ d4(`Primitive.${t}`), r = u.forwardRef((o, a) => {
     const { asChild: i, ...s } = o, l = i ? n : t;
     return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ m(l, { ...s, ref: a });
   });
   return r.displayName = `Primitive.${t}`, { ...e, [t]: r };
 }, {}), Pp, uc = "HoverCard", [x1] = pt(uc, [
   Yn
-]), dc = Yn(), [yY, fc] = x1(uc), S1 = (e) => {
+]), dc = Yn(), [y4, fc] = x1(uc), S1 = (e) => {
   const {
     __scopeHoverCard: t,
     children: n,
@@ -25693,7 +25693,7 @@ var vY = [
   return u.useEffect(() => () => {
     clearTimeout(c.current), clearTimeout(f.current);
   }, []), /* @__PURE__ */ m(
-    yY,
+    y4,
     {
       scope: t,
       open: h,
@@ -25712,7 +25712,7 @@ var C1 = "HoverCardTrigger", E1 = u.forwardRef(
   (e, t) => {
     const { __scopeHoverCard: n, ...r } = e, o = fc(C1, n), a = dc(n);
     return /* @__PURE__ */ m(ca, { asChild: !0, ...a, children: /* @__PURE__ */ m(
-      bY.a,
+      b4.a,
       {
         "data-state": o.open ? "open" : "closed",
         ...r,
@@ -25727,18 +25727,18 @@ var C1 = "HoverCardTrigger", E1 = u.forwardRef(
   }
 );
 E1.displayName = C1;
-var tv = "HoverCardPortal", [wY, xY] = x1(tv, {
+var tv = "HoverCardPortal", [w4, x4] = x1(tv, {
   forceMount: void 0
 }), _1 = (e) => {
   const { __scopeHoverCard: t, forceMount: n, children: r, container: o } = e, a = fc(tv, t);
-  return /* @__PURE__ */ m(wY, { scope: t, forceMount: n, children: /* @__PURE__ */ m(it, { present: n || a.open, children: /* @__PURE__ */ m(fo, { asChild: !0, container: o, children: r }) }) });
+  return /* @__PURE__ */ m(w4, { scope: t, forceMount: n, children: /* @__PURE__ */ m(it, { present: n || a.open, children: /* @__PURE__ */ m(fo, { asChild: !0, container: o, children: r }) }) });
 };
 _1.displayName = tv;
 var sl = "HoverCardContent", R1 = u.forwardRef(
   (e, t) => {
-    const n = xY(sl, e.__scopeHoverCard), { forceMount: r = n.forceMount, ...o } = e, a = fc(sl, e.__scopeHoverCard);
+    const n = x4(sl, e.__scopeHoverCard), { forceMount: r = n.forceMount, ...o } = e, a = fc(sl, e.__scopeHoverCard);
     return /* @__PURE__ */ m(it, { present: r || a.open, children: /* @__PURE__ */ m(
-      SY,
+      S4,
       {
         "data-state": a.open ? "open" : "closed",
         ...o,
@@ -25750,7 +25750,7 @@ var sl = "HoverCardContent", R1 = u.forwardRef(
   }
 );
 R1.displayName = sl;
-var SY = u.forwardRef((e, t) => {
+var S4 = u.forwardRef((e, t) => {
   const {
     __scopeHoverCard: n,
     onEscapeKeyDown: r,
@@ -25779,7 +25779,7 @@ var SY = u.forwardRef((e, t) => {
       };
     }
   }, [l.isPointerDownOnContentRef, l.hasSelectionRef]), u.useEffect(() => {
-    f.current && _Y(f.current).forEach((g) => g.setAttribute("tabindex", "-1"));
+    f.current && _4(f.current).forEach((g) => g.setAttribute("tabindex", "-1"));
   }), /* @__PURE__ */ m(
     Tr,
     {
@@ -25816,33 +25816,33 @@ var SY = u.forwardRef((e, t) => {
       )
     }
   );
-}), CY = "HoverCardArrow", EY = u.forwardRef(
+}), C4 = "HoverCardArrow", E4 = u.forwardRef(
   (e, t) => {
     const { __scopeHoverCard: n, ...r } = e, o = dc(n);
     return /* @__PURE__ */ m(Ii, { ...o, ...r, ref: t });
   }
 );
-EY.displayName = CY;
+E4.displayName = C4;
 function ll(e) {
   return (t) => t.pointerType === "touch" ? void 0 : e();
 }
-function _Y(e) {
+function _4(e) {
   const t = [], n = document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
     acceptNode: (r) => r.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
   });
   for (; n.nextNode(); ) t.push(n.currentNode);
   return t;
 }
-var RY = S1, PY = E1, OY = _1, NY = R1;
+var R4 = S1, P4 = E1, O4 = _1, N4 = R1;
 function ite({
   ...e
 }) {
-  return /* @__PURE__ */ m(RY, { "data-slot": "hover-card", ...e });
+  return /* @__PURE__ */ m(R4, { "data-slot": "hover-card", ...e });
 }
 function ste({
   ...e
 }) {
-  return /* @__PURE__ */ m(PY, { "data-slot": "hover-card-trigger", ...e });
+  return /* @__PURE__ */ m(P4, { "data-slot": "hover-card-trigger", ...e });
 }
 function lte({
   className: e,
@@ -25850,8 +25850,8 @@ function lte({
   sideOffset: n = 4,
   ...r
 }) {
-  return /* @__PURE__ */ m(OY, { "data-slot": "hover-card-portal", children: /* @__PURE__ */ m(
-    NY,
+  return /* @__PURE__ */ m(O4, { "data-slot": "hover-card-portal", children: /* @__PURE__ */ m(
+    N4,
     {
       "data-slot": "hover-card-content",
       align: t,
@@ -25890,9 +25890,9 @@ function ute({ className: e, ...t }) {
   );
 }
 // @__NO_SIDE_EFFECTS__
-function TY(e) {
-  const t = /* @__PURE__ */ IY(e), n = u.forwardRef((r, o) => {
-    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(AY);
+function T4(e) {
+  const t = /* @__PURE__ */ I4(e), n = u.forwardRef((r, o) => {
+    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(A4);
     if (l) {
       const c = l.props.children, f = s.map((d) => d === l ? u.Children.count(c) > 1 ? u.Children.only(null) : u.isValidElement(c) ? c.props.children : null : d);
       return /* @__PURE__ */ m(t, { ...i, ref: o, children: u.isValidElement(c) ? u.cloneElement(c, void 0, f) : null });
@@ -25902,22 +25902,22 @@ function TY(e) {
   return n.displayName = `${e}.Slot`, n;
 }
 // @__NO_SIDE_EFFECTS__
-function IY(e) {
+function I4(e) {
   const t = u.forwardRef((n, r) => {
     const { children: o, ...a } = n;
     if (u.isValidElement(o)) {
-      const i = kY(o), s = DY(a, o.props);
+      const i = k4(o), s = D4(a, o.props);
       return o.type !== u.Fragment && (s.ref = r ? Ge(r, i) : i), u.cloneElement(o, s);
     }
     return u.Children.count(o) > 1 ? u.Children.only(null) : null;
   });
   return t.displayName = `${e}.SlotClone`, t;
 }
-var MY = Symbol("radix.slottable");
-function AY(e) {
-  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === MY;
+var M4 = Symbol("radix.slottable");
+function A4(e) {
+  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === M4;
 }
-function DY(e, t) {
+function D4(e, t) {
   const n = { ...t };
   for (const r in t) {
     const o = e[r], a = t[r];
@@ -25928,12 +25928,12 @@ function DY(e, t) {
   }
   return { ...e, ...n };
 }
-function kY(e) {
+function k4(e) {
   var r, o;
   let t = (r = Object.getOwnPropertyDescriptor(e.props, "ref")) == null ? void 0 : r.get, n = t && "isReactWarning" in t && t.isReactWarning;
   return n ? e.ref : (t = (o = Object.getOwnPropertyDescriptor(e, "ref")) == null ? void 0 : o.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-var $Y = [
+var $4 = [
   "a",
   "button",
   "div",
@@ -25951,16 +25951,16 @@ var $Y = [
   "span",
   "svg",
   "ul"
-], P1 = $Y.reduce((e, t) => {
-  const n = /* @__PURE__ */ TY(`Primitive.${t}`), r = u.forwardRef((o, a) => {
+], P1 = $4.reduce((e, t) => {
+  const n = /* @__PURE__ */ T4(`Primitive.${t}`), r = u.forwardRef((o, a) => {
     const { asChild: i, ...s } = o, l = i ? n : t;
     return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ m(l, { ...s, ref: a });
   });
   return r.displayName = `Primitive.${t}`, { ...e, [t]: r };
-}, {}), Vi = "Menubar", [_m, LY, FY] = Nr(Vi), [O1] = pt(Vi, [
-  FY,
+}, {}), Vi = "Menubar", [_m, L4, F4] = Nr(Vi), [O1] = pt(Vi, [
+  F4,
   Xn
-]), Ft = Li(), N1 = Xn(), [zY, nv] = O1(Vi), T1 = u.forwardRef(
+]), Ft = Li(), N1 = Xn(), [z4, nv] = O1(Vi), T1 = u.forwardRef(
   (e, t) => {
     const {
       __scopeMenubar: n,
@@ -25977,7 +25977,7 @@ var $Y = [
       caller: Vi
     }), [h, v] = u.useState(null);
     return /* @__PURE__ */ m(
-      zY,
+      z4,
       {
         scope: n,
         value: d,
@@ -26014,12 +26014,12 @@ var $Y = [
   }
 );
 T1.displayName = Vi;
-var rv = "MenubarMenu", [VY, I1] = O1(rv), M1 = (e) => {
+var rv = "MenubarMenu", [V4, I1] = O1(rv), M1 = (e) => {
   const { __scopeMenubar: t, value: n, ...r } = e, o = ot(), a = n || o || "LEGACY_REACT_AUTO_VALUE", i = nv(rv, t), s = Ft(t), l = u.useRef(null), c = u.useRef(!1), f = i.value === a;
   return u.useEffect(() => {
     f || (c.current = !1);
   }, [f]), /* @__PURE__ */ m(
-    VY,
+    V4,
     {
       scope: t,
       value: a,
@@ -26088,14 +26088,14 @@ var Rm = "MenubarTrigger", A1 = u.forwardRef(
   }
 );
 A1.displayName = Rm;
-var BY = "MenubarPortal", D1 = (e) => {
+var B4 = "MenubarPortal", D1 = (e) => {
   const { __scopeMenubar: t, ...n } = e, r = Ft(t);
   return /* @__PURE__ */ m(Lg, { ...r, ...n });
 };
-D1.displayName = BY;
+D1.displayName = B4;
 var Pm = "MenubarContent", k1 = u.forwardRef(
   (e, t) => {
-    const { __scopeMenubar: n, align: r = "start", ...o } = e, a = Ft(n), i = nv(Pm, n), s = I1(Pm, n), l = LY(n), c = u.useRef(!1);
+    const { __scopeMenubar: n, align: r = "start", ...o } = e, a = Ft(n), i = nv(Pm, n), s = I1(Pm, n), l = L4(n), c = u.useRef(!1);
     return /* @__PURE__ */ m(
       Fg,
       {
@@ -26132,7 +26132,7 @@ var Pm = "MenubarContent", k1 = u.forwardRef(
               let w = l().filter((_) => !_.disabled).map((_) => _.value);
               g && w.reverse();
               const x = w.indexOf(s.value);
-              w = i.loop ? e4(w, x + 1) : w.slice(x + 1);
+              w = i.loop ? eY(w, x + 1) : w.slice(x + 1);
               const [S] = w;
               S && i.onMenuOpen(S);
             }
@@ -26152,67 +26152,67 @@ var Pm = "MenubarContent", k1 = u.forwardRef(
   }
 );
 k1.displayName = Pm;
-var WY = "MenubarGroup", $1 = u.forwardRef(
+var W4 = "MenubarGroup", $1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(zg, { ...o, ...r, ref: t });
   }
 );
-$1.displayName = WY;
-var jY = "MenubarLabel", L1 = u.forwardRef(
+$1.displayName = W4;
+var j4 = "MenubarLabel", L1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Vg, { ...o, ...r, ref: t });
   }
 );
-L1.displayName = jY;
-var HY = "MenubarItem", F1 = u.forwardRef(
+L1.displayName = j4;
+var H4 = "MenubarItem", F1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Bg, { ...o, ...r, ref: t });
   }
 );
-F1.displayName = HY;
-var qY = "MenubarCheckboxItem", z1 = u.forwardRef(
+F1.displayName = H4;
+var q4 = "MenubarCheckboxItem", z1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Wg, { ...o, ...r, ref: t });
   }
 );
-z1.displayName = qY;
-var GY = "MenubarRadioGroup", V1 = u.forwardRef(
+z1.displayName = q4;
+var G4 = "MenubarRadioGroup", V1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(jg, { ...o, ...r, ref: t });
   }
 );
-V1.displayName = GY;
-var UY = "MenubarRadioItem", B1 = u.forwardRef(
+V1.displayName = G4;
+var U4 = "MenubarRadioItem", B1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Hg, { ...o, ...r, ref: t });
   }
 );
-B1.displayName = UY;
-var KY = "MenubarItemIndicator", W1 = u.forwardRef((e, t) => {
+B1.displayName = U4;
+var K4 = "MenubarItemIndicator", W1 = u.forwardRef((e, t) => {
   const { __scopeMenubar: n, ...r } = e, o = Ft(n);
   return /* @__PURE__ */ m(qg, { ...o, ...r, ref: t });
 });
-W1.displayName = KY;
-var YY = "MenubarSeparator", j1 = u.forwardRef(
+W1.displayName = K4;
+var Y4 = "MenubarSeparator", j1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Gg, { ...o, ...r, ref: t });
   }
 );
-j1.displayName = YY;
-var XY = "MenubarArrow", ZY = u.forwardRef(
+j1.displayName = Y4;
+var X4 = "MenubarArrow", Z4 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(Ug, { ...o, ...r, ref: t });
   }
 );
-ZY.displayName = XY;
+Z4.displayName = X4;
 var H1 = "MenubarSub", q1 = (e) => {
   const { __scopeMenubar: t, children: n, open: r, onOpenChange: o, defaultOpen: a } = e, i = Ft(t), [s, l] = dt({
     prop: r,
@@ -26223,7 +26223,7 @@ var H1 = "MenubarSub", q1 = (e) => {
   return /* @__PURE__ */ m(Kg, { ...i, open: s, onOpenChange: l, children: n });
 };
 q1.displayName = H1;
-var QY = "MenubarSubTrigger", G1 = u.forwardRef(
+var Q4 = "MenubarSubTrigger", G1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(
@@ -26237,8 +26237,8 @@ var QY = "MenubarSubTrigger", G1 = u.forwardRef(
     );
   }
 );
-G1.displayName = QY;
-var JY = "MenubarSubContent", U1 = u.forwardRef(
+G1.displayName = Q4;
+var J4 = "MenubarSubContent", U1 = u.forwardRef(
   (e, t) => {
     const { __scopeMenubar: n, ...r } = e, o = Ft(n);
     return /* @__PURE__ */ m(
@@ -26260,17 +26260,17 @@ var JY = "MenubarSubContent", U1 = u.forwardRef(
     );
   }
 );
-U1.displayName = JY;
-function e4(e, t) {
+U1.displayName = J4;
+function eY(e, t) {
   return e.map((n, r) => e[(t + r) % e.length]);
 }
-var t4 = T1, n4 = M1, r4 = A1, o4 = D1, a4 = k1, i4 = $1, s4 = L1, l4 = F1, c4 = z1, u4 = V1, d4 = B1, K1 = W1, f4 = j1, p4 = q1, m4 = G1, h4 = U1;
+var tY = T1, nY = M1, rY = A1, oY = D1, aY = k1, iY = $1, sY = L1, lY = F1, cY = z1, uY = V1, dY = B1, K1 = W1, fY = j1, pY = q1, mY = G1, hY = U1;
 function dte({
   className: e,
   ...t
 }) {
   return /* @__PURE__ */ m(
-    t4,
+    tY,
     {
       "data-slot": "menubar",
       className: T(
@@ -26284,29 +26284,29 @@ function dte({
 function fte({
   ...e
 }) {
-  return /* @__PURE__ */ m(n4, { "data-slot": "menubar-menu", ...e });
+  return /* @__PURE__ */ m(nY, { "data-slot": "menubar-menu", ...e });
 }
 function pte({
   ...e
 }) {
-  return /* @__PURE__ */ m(i4, { "data-slot": "menubar-group", ...e });
+  return /* @__PURE__ */ m(iY, { "data-slot": "menubar-group", ...e });
 }
 function Y1({
   ...e
 }) {
-  return /* @__PURE__ */ m(o4, { "data-slot": "menubar-portal", ...e });
+  return /* @__PURE__ */ m(oY, { "data-slot": "menubar-portal", ...e });
 }
 function mte({
   ...e
 }) {
-  return /* @__PURE__ */ m(u4, { "data-slot": "menubar-radio-group", ...e });
+  return /* @__PURE__ */ m(uY, { "data-slot": "menubar-radio-group", ...e });
 }
 function hte({
   className: e,
   ...t
 }) {
   return /* @__PURE__ */ m(
-    r4,
+    rY,
     {
       "data-slot": "menubar-trigger",
       className: T(
@@ -26325,7 +26325,7 @@ function gte({
   ...o
 }) {
   return /* @__PURE__ */ m(Y1, { children: /* @__PURE__ */ m(
-    a4,
+    aY,
     {
       "data-slot": "menubar-content",
       align: t,
@@ -26346,7 +26346,7 @@ function vte({
   ...r
 }) {
   return /* @__PURE__ */ m(
-    l4,
+    lY,
     {
       "data-slot": "menubar-item",
       "data-inset": t,
@@ -26366,7 +26366,7 @@ function bte({
   ...r
 }) {
   return /* @__PURE__ */ we(
-    c4,
+    cY,
     {
       "data-slot": "menubar-checkbox-item",
       className: T(
@@ -26388,7 +26388,7 @@ function yte({
   ...n
 }) {
   return /* @__PURE__ */ we(
-    d4,
+    dY,
     {
       "data-slot": "menubar-radio-item",
       className: T(
@@ -26409,7 +26409,7 @@ function wte({
   ...n
 }) {
   return /* @__PURE__ */ m(
-    s4,
+    sY,
     {
       "data-slot": "menubar-label",
       "data-inset": t,
@@ -26426,7 +26426,7 @@ function xte({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    f4,
+    fY,
     {
       "data-slot": "menubar-separator",
       className: T("bg-border pointer-events-none mx-2 my-1.5 h-px", e),
@@ -26453,7 +26453,7 @@ function Ste({
 function Cte({
   ...e
 }) {
-  return /* @__PURE__ */ m(p4, { "data-slot": "menubar-sub", ...e });
+  return /* @__PURE__ */ m(pY, { "data-slot": "menubar-sub", ...e });
 }
 function Ete({
   className: e,
@@ -26462,7 +26462,7 @@ function Ete({
   ...r
 }) {
   return /* @__PURE__ */ we(
-    m4,
+    mY,
     {
       "data-slot": "menubar-sub-trigger",
       "data-inset": t,
@@ -26483,7 +26483,7 @@ function _te({
   ...t
 }) {
   return /* @__PURE__ */ m(Y1, { children: /* @__PURE__ */ m(
-    h4,
+    hY,
     {
       "data-slot": "menubar-sub-content",
       className: T(
@@ -26548,9 +26548,9 @@ function Ote({
   );
 }
 // @__NO_SIDE_EFFECTS__
-function g4(e) {
-  const t = /* @__PURE__ */ v4(e), n = u.forwardRef((r, o) => {
-    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(y4);
+function gY(e) {
+  const t = /* @__PURE__ */ vY(e), n = u.forwardRef((r, o) => {
+    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(yY);
     if (l) {
       const c = l.props.children, f = s.map((d) => d === l ? u.Children.count(c) > 1 ? u.Children.only(null) : u.isValidElement(c) ? c.props.children : null : d);
       return /* @__PURE__ */ m(t, { ...i, ref: o, children: u.isValidElement(c) ? u.cloneElement(c, void 0, f) : null });
@@ -26560,22 +26560,22 @@ function g4(e) {
   return n.displayName = `${e}.Slot`, n;
 }
 // @__NO_SIDE_EFFECTS__
-function v4(e) {
+function vY(e) {
   const t = u.forwardRef((n, r) => {
     const { children: o, ...a } = n;
     if (u.isValidElement(o)) {
-      const i = x4(o), s = w4(a, o.props);
+      const i = xY(o), s = wY(a, o.props);
       return o.type !== u.Fragment && (s.ref = r ? Ge(r, i) : i), u.cloneElement(o, s);
     }
     return u.Children.count(o) > 1 ? u.Children.only(null) : null;
   });
   return t.displayName = `${e}.SlotClone`, t;
 }
-var b4 = Symbol("radix.slottable");
-function y4(e) {
-  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === b4;
+var bY = Symbol("radix.slottable");
+function yY(e) {
+  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === bY;
 }
-function w4(e, t) {
+function wY(e, t) {
   const n = { ...t };
   for (const r in t) {
     const o = e[r], a = t[r];
@@ -26586,12 +26586,12 @@ function w4(e, t) {
   }
   return { ...e, ...n };
 }
-function x4(e) {
+function xY(e) {
   var r, o;
   let t = (r = Object.getOwnPropertyDescriptor(e.props, "ref")) == null ? void 0 : r.get, n = t && "isReactWarning" in t && t.isReactWarning;
   return n ? e.ref : (t = (o = Object.getOwnPropertyDescriptor(e, "ref")) == null ? void 0 : o.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-var S4 = [
+var SY = [
   "a",
   "button",
   "div",
@@ -26609,8 +26609,8 @@ var S4 = [
   "span",
   "svg",
   "ul"
-], Tn = S4.reduce((e, t) => {
-  const n = /* @__PURE__ */ g4(`Primitive.${t}`), r = u.forwardRef((o, a) => {
+], Tn = SY.reduce((e, t) => {
+  const n = /* @__PURE__ */ gY(`Primitive.${t}`), r = u.forwardRef((o, a) => {
     const { asChild: i, ...s } = o, l = i ? n : t;
     return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ m(l, { ...s, ref: a });
   });
@@ -26620,9 +26620,9 @@ function $S(e, t) {
   e && bn.flushSync(() => e.dispatchEvent(t));
 }
 // @__NO_SIDE_EFFECTS__
-function C4(e) {
-  const t = /* @__PURE__ */ E4(e), n = u.forwardRef((r, o) => {
-    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(R4);
+function CY(e) {
+  const t = /* @__PURE__ */ EY(e), n = u.forwardRef((r, o) => {
+    const { children: a, ...i } = r, s = u.Children.toArray(a), l = s.find(RY);
     if (l) {
       const c = l.props.children, f = s.map((d) => d === l ? u.Children.count(c) > 1 ? u.Children.only(null) : u.isValidElement(c) ? c.props.children : null : d);
       return /* @__PURE__ */ m(t, { ...i, ref: o, children: u.isValidElement(c) ? u.cloneElement(c, void 0, f) : null });
@@ -26632,22 +26632,22 @@ function C4(e) {
   return n.displayName = `${e}.Slot`, n;
 }
 // @__NO_SIDE_EFFECTS__
-function E4(e) {
+function EY(e) {
   const t = u.forwardRef((n, r) => {
     const { children: o, ...a } = n;
     if (u.isValidElement(o)) {
-      const i = O4(o), s = P4(a, o.props);
+      const i = OY(o), s = PY(a, o.props);
       return o.type !== u.Fragment && (s.ref = r ? Ge(r, i) : i), u.cloneElement(o, s);
     }
     return u.Children.count(o) > 1 ? u.Children.only(null) : null;
   });
   return t.displayName = `${e}.SlotClone`, t;
 }
-var _4 = Symbol("radix.slottable");
-function R4(e) {
-  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === _4;
+var _Y = Symbol("radix.slottable");
+function RY(e) {
+  return u.isValidElement(e) && typeof e.type == "function" && "__radixId" in e.type && e.type.__radixId === _Y;
 }
-function P4(e, t) {
+function PY(e, t) {
   const n = { ...t };
   for (const r in t) {
     const o = e[r], a = t[r];
@@ -26658,12 +26658,12 @@ function P4(e, t) {
   }
   return { ...e, ...n };
 }
-function O4(e) {
+function OY(e) {
   var r, o;
   let t = (r = Object.getOwnPropertyDescriptor(e.props, "ref")) == null ? void 0 : r.get, n = t && "isReactWarning" in t && t.isReactWarning;
   return n ? e.ref : (t = (o = Object.getOwnPropertyDescriptor(e, "ref")) == null ? void 0 : o.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-var N4 = [
+var NY = [
   "a",
   "button",
   "div",
@@ -26681,8 +26681,8 @@ var N4 = [
   "span",
   "svg",
   "ul"
-], T4 = N4.reduce((e, t) => {
-  const n = /* @__PURE__ */ C4(`Primitive.${t}`), r = u.forwardRef((o, a) => {
+], TY = NY.reduce((e, t) => {
+  const n = /* @__PURE__ */ CY(`Primitive.${t}`), r = u.forwardRef((o, a) => {
     const { asChild: i, ...s } = o, l = i ? n : t;
     return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ m(l, { ...s, ref: a });
   });
@@ -26699,9 +26699,9 @@ var N4 = [
   clip: "rect(0, 0, 0, 0)",
   whiteSpace: "nowrap",
   wordWrap: "normal"
-}), I4 = "VisuallyHidden", Z1 = u.forwardRef(
+}), IY = "VisuallyHidden", Z1 = u.forwardRef(
   (e, t) => /* @__PURE__ */ m(
-    T4.span,
+    TY.span,
     {
       ...e,
       ref: t,
@@ -26709,11 +26709,11 @@ var N4 = [
     }
   )
 );
-Z1.displayName = I4;
-var Q1 = Z1, xo = "NavigationMenu", [ov, J1, M4] = Nr(xo), [Om, A4, D4] = Nr(xo), [av] = pt(
+Z1.displayName = IY;
+var Q1 = Z1, xo = "NavigationMenu", [ov, J1, MY] = Nr(xo), [Om, AY, DY] = Nr(xo), [av] = pt(
   xo,
-  [M4, D4]
-), [k4, yn] = av(xo), [$4, L4] = av(xo), eO = u.forwardRef(
+  [MY, DY]
+), [kY, yn] = av(xo), [$Y, LY] = av(xo), eO = u.forwardRef(
   (e, t) => {
     const {
       __scopeNavigationMenu: n,
@@ -26789,7 +26789,7 @@ var Q1 = Z1, xo = "NavigationMenu", [ov, J1, M4] = Nr(xo), [Om, A4, D4] = Nr(xo)
   }
 );
 eO.displayName = xo;
-var Nm = "NavigationMenuSub", F4 = u.forwardRef(
+var Nm = "NavigationMenuSub", FY = u.forwardRef(
   (e, t) => {
     const {
       __scopeNavigationMenu: n,
@@ -26821,7 +26821,7 @@ var Nm = "NavigationMenuSub", F4 = u.forwardRef(
     );
   }
 );
-F4.displayName = Nm;
+FY.displayName = Nm;
 var tO = (e) => {
   const {
     scope: t,
@@ -26839,7 +26839,7 @@ var tO = (e) => {
     onContentLeave: h
   } = e, [v, g] = u.useState(null), [b, y] = u.useState(/* @__PURE__ */ new Map()), [w, x] = u.useState(null);
   return /* @__PURE__ */ m(
-    k4,
+    kY,
     {
       scope: t,
       isRootMenu: n,
@@ -26865,7 +26865,7 @@ var tO = (e) => {
       onViewportContentRemove: u.useCallback((S) => {
         y((_) => _.has(S) ? (_.delete(S), new Map(_)) : _);
       }, []),
-      children: /* @__PURE__ */ m(ov.Provider, { scope: t, children: /* @__PURE__ */ m($4, { scope: t, items: b, children: i }) })
+      children: /* @__PURE__ */ m(ov.Provider, { scope: t, children: /* @__PURE__ */ m($Y, { scope: t, items: b, children: i }) })
     }
   );
 }, nO = "NavigationMenuList", rO = u.forwardRef(
@@ -26875,7 +26875,7 @@ var tO = (e) => {
   }
 );
 rO.displayName = nO;
-var oO = "NavigationMenuItem", [z4, aO] = av(oO), iO = u.forwardRef(
+var oO = "NavigationMenuItem", [zY, aO] = av(oO), iO = u.forwardRef(
   (e, t) => {
     const { __scopeNavigationMenu: n, value: r, ...o } = e, a = ot(), i = r || a || "LEGACY_REACT_AUTO_VALUE", s = u.useRef(null), l = u.useRef(null), c = u.useRef(null), f = u.useRef(() => {
     }), d = u.useRef(!1), p = u.useCallback((v = "start") => {
@@ -26887,11 +26887,11 @@ var oO = "NavigationMenuItem", [z4, aO] = av(oO), iO = u.forwardRef(
     }, []), h = u.useCallback(() => {
       if (s.current) {
         const v = Im(s.current);
-        v.length && (f.current = G4(v));
+        v.length && (f.current = GY(v));
       }
     }, []);
     return /* @__PURE__ */ m(
-      z4,
+      zY,
       {
         scope: n,
         value: i,
@@ -26965,7 +26965,7 @@ var Tm = "NavigationMenuTrigger", sO = u.forwardRef((e, t) => {
   ] });
 });
 sO.displayName = Tm;
-var V4 = "NavigationMenuLink", LS = "navigationMenu.linkSelect", lO = u.forwardRef(
+var VY = "NavigationMenuLink", LS = "navigationMenu.linkSelect", lO = u.forwardRef(
   (e, t) => {
     const { __scopeNavigationMenu: n, active: r, onSelect: o, ...a } = e;
     return /* @__PURE__ */ m(mO, { asChild: !0, children: /* @__PURE__ */ m(
@@ -26996,16 +26996,16 @@ var V4 = "NavigationMenuLink", LS = "navigationMenu.linkSelect", lO = u.forwardR
     ) });
   }
 );
-lO.displayName = V4;
+lO.displayName = VY;
 var iv = "NavigationMenuIndicator", cO = u.forwardRef((e, t) => {
   const { forceMount: n, ...r } = e, o = yn(iv, e.__scopeNavigationMenu), a = !!o.value;
   return o.indicatorTrack ? Ym.createPortal(
-    /* @__PURE__ */ m(it, { present: n || a, children: /* @__PURE__ */ m(B4, { ...r, ref: t }) }),
+    /* @__PURE__ */ m(it, { present: n || a, children: /* @__PURE__ */ m(BY, { ...r, ref: t }) }),
     o.indicatorTrack
   ) : null;
 });
 cO.displayName = iv;
-var B4 = u.forwardRef((e, t) => {
+var BY = u.forwardRef((e, t) => {
   const { __scopeNavigationMenu: n, ...r } = e, o = yn(iv, n), a = J1(n), [i, s] = u.useState(
     null
   ), [l, c] = u.useState(null), f = o.orientation === "horizontal", d = !!o.value;
@@ -27053,7 +27053,7 @@ var B4 = u.forwardRef((e, t) => {
     onRootContentClose: a.onRootContentClose,
     ...r
   };
-  return o.viewport ? /* @__PURE__ */ m(W4, { forceMount: n, ...l, ref: i }) : /* @__PURE__ */ m(it, { present: n || s, children: /* @__PURE__ */ m(
+  return o.viewport ? /* @__PURE__ */ m(WY, { forceMount: n, ...l, ref: i }) : /* @__PURE__ */ m(it, { present: n || s, children: /* @__PURE__ */ m(
     dO,
     {
       "data-state": cv(s),
@@ -27073,7 +27073,7 @@ var B4 = u.forwardRef((e, t) => {
   ) });
 });
 uO.displayName = Jo;
-var W4 = u.forwardRef((e, t) => {
+var WY = u.forwardRef((e, t) => {
   const n = yn(Jo, e.__scopeNavigationMenu), { onViewportContentChange: r, onViewportContentRemove: o } = n;
   return ft(() => {
     r(e.value, {
@@ -27163,11 +27163,11 @@ var W4 = u.forwardRef((e, t) => {
   ) });
 }), sv = "NavigationMenuViewport", fO = u.forwardRef((e, t) => {
   const { forceMount: n, ...r } = e, a = !!yn(sv, e.__scopeNavigationMenu).value;
-  return /* @__PURE__ */ m(it, { present: n || a, children: /* @__PURE__ */ m(j4, { ...r, ref: t }) });
+  return /* @__PURE__ */ m(it, { present: n || a, children: /* @__PURE__ */ m(jY, { ...r, ref: t }) });
 });
 fO.displayName = sv;
-var j4 = u.forwardRef((e, t) => {
-  const { __scopeNavigationMenu: n, children: r, ...o } = e, a = yn(sv, n), i = _e(t, a.onViewportChange), s = L4(
+var jY = u.forwardRef((e, t) => {
+  const { __scopeNavigationMenu: n, children: r, ...o } = e, a = yn(sv, n), i = _e(t, a.onViewportChange), s = LY(
     Jo,
     e.__scopeNavigationMenu
   ), [l, c] = u.useState(null), [f, d] = u.useState(null), p = l ? (l == null ? void 0 : l.width) + "px" : void 0, h = l ? (l == null ? void 0 : l.height) + "px" : void 0, v = !!a.value, g = v ? a.value : a.previousValue;
@@ -27203,14 +27203,14 @@ var j4 = u.forwardRef((e, t) => {
       })
     }
   );
-}), H4 = "FocusGroup", pO = u.forwardRef(
+}), HY = "FocusGroup", pO = u.forwardRef(
   (e, t) => {
-    const { __scopeNavigationMenu: n, ...r } = e, o = yn(H4, n);
+    const { __scopeNavigationMenu: n, ...r } = e, o = yn(HY, n);
     return /* @__PURE__ */ m(Om.Provider, { scope: n, children: /* @__PURE__ */ m(Om.Slot, { scope: n, children: /* @__PURE__ */ m(Tn.div, { dir: o.dir, ...r, ref: t }) }) });
   }
-), FS = ["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"], q4 = "FocusGroupItem", mO = u.forwardRef(
+), FS = ["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"], qY = "FocusGroupItem", mO = u.forwardRef(
   (e, t) => {
-    const { __scopeNavigationMenu: n, ...r } = e, o = A4(n), a = yn(q4, n);
+    const { __scopeNavigationMenu: n, ...r } = e, o = AY(n), a = yn(qY, n);
     return /* @__PURE__ */ m(Om.ItemSlot, { scope: n, children: /* @__PURE__ */ m(
       Tn.button,
       {
@@ -27244,7 +27244,7 @@ function lv(e) {
   const t = document.activeElement;
   return e.some((n) => n === t ? !0 : (n.focus(), document.activeElement !== t));
 }
-function G4(e) {
+function GY(e) {
   return e.forEach((t) => {
     t.dataset.tabindex = t.getAttribute("tabindex") || "", t.setAttribute("tabindex", "-1");
   }), () => {
@@ -27280,7 +27280,7 @@ function gO(e, t) {
 function cl(e) {
   return (t) => t.pointerType === "mouse" ? e(t) : void 0;
 }
-var U4 = eO, K4 = rO, Y4 = iO, X4 = sO, Z4 = lO, Q4 = cO, J4 = uO, e8 = fO;
+var UY = eO, KY = rO, YY = iO, XY = sO, ZY = lO, QY = cO, JY = uO, e8 = fO;
 function Nte({
   className: e,
   children: t,
@@ -27288,7 +27288,7 @@ function Nte({
   ...r
 }) {
   return /* @__PURE__ */ we(
-    U4,
+    UY,
     {
       "data-slot": "navigation-menu",
       "data-viewport": n,
@@ -27309,7 +27309,7 @@ function Tte({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    K4,
+    KY,
     {
       "data-slot": "navigation-menu-list",
       className: T(
@@ -27325,7 +27325,7 @@ function Ite({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    Y4,
+    YY,
     {
       "data-slot": "navigation-menu-item",
       className: T("relative", e),
@@ -27342,7 +27342,7 @@ function Mte({
   ...n
 }) {
   return /* @__PURE__ */ we(
-    X4,
+    XY,
     {
       "data-slot": "navigation-menu-trigger",
       className: T(t8(), "group", e),
@@ -27366,7 +27366,7 @@ function Ate({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    J4,
+    JY,
     {
       "data-slot": "navigation-menu-content",
       className: T(
@@ -27435,7 +27435,7 @@ function Dte({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    Z4,
+    ZY,
     {
       "data-slot": "navigation-menu-link",
       className: T(
@@ -27451,7 +27451,7 @@ function kte({
   ...t
 }) {
   return /* @__PURE__ */ m(
-    Q4,
+    QY,
     {
       "data-slot": "navigation-menu-indicator",
       className: T(
@@ -33503,7 +33503,7 @@ function Fne({
       "data-slot": "switch",
       "data-size": t,
       className: T(
-        "peer data-[state=checked]:bg-brand-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 group/switch inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-5 data-[size=default]:w-9 data-[size=sm]:h-4 data-[size=sm]:w-7",
+        "peer data-[state=checked]:bg-brand-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 group/switch inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-6 data-[size=default]:w-10 data-[size=sm]:h-4 data-[size=sm]:w-7",
         e
       ),
       ...n,
@@ -33512,7 +33512,7 @@ function Fne({
         {
           "data-slot": "switch-thumb",
           className: T(
-            "bg-white dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-white pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 shadow-sm group-data-[size=default]/switch:data-[state=checked]:translate-x-[17px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[1px] rtl:group-data-[size=default]/switch:data-[state=checked]:-translate-x-[17px] rtl:group-data-[size=sm]/switch:data-[state=checked]:-translate-x-[13px] rtl:data-[state=unchecked]:-translate-x-[1px]"
+            "bg-white dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-white pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 shadow-sm group-data-[size=default]/switch:data-[state=checked]:translate-x-[20px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[4px] rtl:group-data-[size=default]/switch:data-[state=checked]:-translate-x-[20px] rtl:group-data-[size=sm]/switch:data-[state=checked]:-translate-x-[13px] rtl:data-[state=unchecked]:-translate-x-[4px]"
           )
         }
       )
