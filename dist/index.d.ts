@@ -817,9 +817,7 @@ export declare function Slider({ className, defaultValue, value, min, max, ...pr
 
 export declare function Spinner({ className, ...props }: React.ComponentProps<"svg">): JSX.Element;
 
-export declare function Switch({ className, size, ...props }: React_2.ComponentProps<typeof SwitchPrimitive.Root> & {
-    size?: "sm" | "default";
-}): JSX.Element;
+export declare function Switch({ className, ...props }: React_2.ComponentProps<typeof SwitchPrimitive.Root>): JSX.Element;
 
 export declare function Table({ className, ...props }: React_2.ComponentProps<"table">): JSX.Element;
 
