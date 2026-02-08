@@ -22535,7 +22535,7 @@ function c3({ className: e, ...t }) {
       role: "group",
       className: T(
         "group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-2xl border transition-[color] outline-none",
-        "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
+        "h-10 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:ps-2",
         "has-[>[data-align=inline-end]]:[&>input]:pe-2",
