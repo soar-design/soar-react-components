@@ -10187,7 +10187,7 @@ function QJ({ className: e, ...t }) {
 }
 function JJ({
   className: e,
-  variant: t = "outline",
+  variant: t = "secondary",
   size: n = "icon",
   ...r
 }) {
@@ -10215,7 +10215,7 @@ function JJ({
 }
 function eee({
   className: e,
-  variant: t = "outline",
+  variant: t = "secondary",
   size: n = "icon",
   ...r
 }) {
