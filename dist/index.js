@@ -5191,7 +5191,7 @@ function AJ({
 }
 function DJ({
   className: e,
-  variant: t = "outline",
+  variant: t = "secondary",
   size: n = "default",
   ...r
 }) {
