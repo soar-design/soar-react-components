@@ -33503,7 +33503,7 @@ function Fne({
       "data-slot": "switch",
       "data-size": t,
       className: T(
-        "peer data-[state=checked]:bg-brand-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 group/switch inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-6 data-[size=default]:w-10 data-[size=sm]:h-5 data-[size=sm]:w-8",
+        "peer data-[state=checked]:bg-brand-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 group/switch inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-6 data-[size=default]:w-10 data-[size=sm]:h-[18px] data-[size=sm]:w-8",
         e
       ),
       ...n,
@@ -33512,7 +33512,7 @@ function Fne({
         {
           "data-slot": "switch-thumb",
           className: T(
-            "bg-white dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-white pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 shadow-sm group-data-[size=default]/switch:data-[state=checked]:translate-x-[19px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[4px] rtl:group-data-[size=default]/switch:data-[state=checked]:-translate-x-[19px] rtl:group-data-[size=sm]/switch:data-[state=checked]:-translate-x-[13px] rtl:data-[state=unchecked]:-translate-x-[4px]"
+            "bg-white dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-white pointer-events-none block rounded-full ring-0 transition-transform group-data-[size=default]/switch:size-4 group-data-[size=sm]/switch:size-3 shadow-sm group-data-[size=default]/switch:data-[state=checked]:translate-x-[19px] group-data-[size=sm]/switch:data-[state=checked]:translate-x-[13px] data-[state=unchecked]:translate-x-[4px] group-data-[size=sm]/switch:data-[state=unchecked]:translate-x-[3px] rtl:group-data-[size=default]/switch:data-[state=checked]:-translate-x-[19px] rtl:group-data-[size=sm]/switch:data-[state=checked]:-translate-x-[13px] rtl:data-[state=unchecked]:-translate-x-[4px]"
           )
         }
       )
