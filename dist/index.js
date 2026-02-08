@@ -27505,7 +27505,7 @@ function vO({
       "data-active": t,
       className: T(
         Ls({
-          variant: t ? "outline" : "ghost",
+          variant: t ? "secondary" : "ghost",
           size: n
         }),
         e
