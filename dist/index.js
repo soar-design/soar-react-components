@@ -8717,7 +8717,7 @@ function YJ({
           l.dropdowns
         ),
         dropdown_root: T(
-          "relative has-focus:border-ring border border-input has-focus:ring-ring/50 has-focus:ring-[3px] rounded-full",
+          "relative has-focus:border-ring border border-input has-focus:ring-ring has-focus:ring-[3px] rounded-full",
           l.dropdown_root
         ),
         dropdown: T(
@@ -8821,7 +8821,7 @@ function $F({
       "data-range-middle": n.range_middle,
       "data-today": n.today,
       className: T(
-        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-full data-[range-end=true]:rounded-e-full data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-full data-[range-start=true]:rounded-s-full data-[today=true]:data-[selected-single=true]:rounded-full data-[today=true]:not([data-range-start]):not([data-range-end]):not([data-range-middle]):rounded-full [&>span]:text-xs [&>span]:opacity-70",
+        "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-full data-[range-end=true]:rounded-e-full data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-full data-[range-start=true]:rounded-s-full data-[today=true]:data-[selected-single=true]:rounded-full data-[today=true]:not([data-range-start]):not([data-range-end]):not([data-range-middle]):rounded-full [&>span]:text-xs [&>span]:opacity-70",
         o.day,
         e
       ),
@@ -22534,17 +22534,17 @@ function c3({ className: e, ...t }) {
       "data-slot": "input-group",
       role: "group",
       className: T(
-        "group/input-group relative flex w-full items-center rounded-2xl transition-[color] outline-none",
-        "h-10 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
+        "group/input-group border-transparent bg-input relative flex w-full items-center rounded-2xl border transition-[color] outline-none",
+        "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:ps-2",
         "has-[>[data-align=inline-end]]:[&>input]:pe-2",
         "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
         "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
         // Focus state.
-        "has-[[data-slot=input-group-control]:focus-visible]:border-brand-border has-[[data-slot=input-group-control]:focus-visible]:border has-[[data-slot=input-group-control]:focus-visible]:ring-ring has-[[data-slot=input-group-control]:focus-visible]:ring-[3px]",
+        "has-[[data-slot=input-group-control]:focus-visible]:border-brand-border has-[[data-slot=input-group-control]:focus-visible]:ring-ring has-[[data-slot=input-group-control]:focus-visible]:ring-[3px]",
         // Error state.
-        "has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:border dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40",
+        "has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40",
         e
       ),
       ...t
@@ -22552,7 +22552,7 @@ function c3({ className: e, ...t }) {
   );
 }
 const u3 = Yt(
-  "text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-sm [&>kbd]:bg-secondary group-data-[disabled=true]/input-group:opacity-50",
+  "text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-sm group-data-[disabled=true]/input-group:opacity-50",
   {
     variants: {
       align: {
@@ -22642,7 +22642,7 @@ function p3({
     {
       "data-slot": "input-group-control",
       className: T(
-        "flex-1 rounded-none border-0 bg-input shadow-none focus-visible:ring-0",
+        "flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-0 dark:bg-transparent",
         e
       ),
       ...t
@@ -22658,7 +22658,7 @@ function dee({
     {
       "data-slot": "input-group-control",
       className: T(
-        "flex-1 resize-none rounded-2xl border-0 bg-input py-3 shadow-none focus-visible:ring-0",
+        "flex-1 resize-none rounded-2xl border-0 bg-transparent py-3 shadow-none focus-visible:ring-0 dark:bg-transparent",
         e
       ),
       ...t
@@ -22877,7 +22877,7 @@ function Cee({
     {
       "data-slot": "combobox-chips",
       className: T(
-        "dark:bg-input/30 border-input focus-within:border-ring focus-within:ring-ring/50 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-9 flex-wrap items-center gap-1.5 rounded-2xl border bg-transparent bg-clip-padding px-2.5 py-1.5 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
+        "dark:bg-input/30 border-input focus-within:border-ring focus-within:ring-ring has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-9 flex-wrap items-center gap-1.5 rounded-2xl border bg-transparent bg-clip-padding px-2.5 py-1.5 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
         e
       ),
       ...t
@@ -33288,7 +33288,7 @@ function $ne({
           aX,
           {
             "data-slot": "slider-thumb",
-            className: "border-brand-primary ring-ring/50 block size-4 shrink-0 rounded-full border-2 bg-white shadow-md transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
+            className: "border-brand-primary ring-ring block size-4 shrink-0 rounded-full border-2 bg-white shadow-md transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
           },
           l
         ))
@@ -37427,7 +37427,7 @@ function Jre({
       "data-slot": "input-otp-slot",
       "data-active": i,
       className: T(
-        "data-[active=true]:border-ring data-[active=true]:ring-ring/50 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-e text-sm shadow-xs transition-all outline-none first:rounded-s-lg first:border-s last:rounded-e-lg data-[active=true]:z-10 data-[active=true]:ring-[3px]",
+        "data-[active=true]:border-ring data-[active=true]:ring-ring data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive dark:bg-input/30 border-input relative flex h-9 w-9 items-center justify-center border-y border-e text-sm shadow-xs transition-all outline-none first:rounded-s-lg first:border-s last:rounded-e-lg data-[active=true]:z-10 data-[active=true]:ring-[3px]",
         t
       ),
       ...n,
