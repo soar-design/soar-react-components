@@ -22505,7 +22505,7 @@ function UR({ className: e, type: t, ...n }) {
       type: t,
       "data-slot": "input",
       className: T(
-        "file:text-foreground placeholder:text-muted-foreground border-transparent border selection:bg-brand-primary selection:text-primary-foreground h-10 w-full min-w-0 rounded-2xl bg-input px-3 py-1 text-base transition-[color] outline-none file:inline-flex file:h-7 file:border-0 file:bg-input file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        "file:text-foreground placeholder:text-muted-foreground border-transparent border selection:bg-brand-primary selection:text-primary-foreground h-10 w-full min-w-0 rounded-2xl bg-input px-3 py-1 text-base transition-[color] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
         "focus-visible:border-brand-border focus-visible:ring-ring focus-visible:ring-[3px]",
         "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
         e
@@ -22535,7 +22535,7 @@ function c3({ className: e, ...t }) {
       role: "group",
       className: T(
         "group/input-group border-transparent bg-input relative flex w-full items-center rounded-2xl border transition-[color] outline-none",
-        "h-9 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
+        "h-10 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:ps-2",
         "has-[>[data-align=inline-end]]:[&>input]:pe-2",
