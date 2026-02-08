@@ -22534,7 +22534,7 @@ function c3({ className: e, ...t }) {
       "data-slot": "input-group",
       role: "group",
       className: T(
-        "group/input-group border-input dark:bg-input/30 relative flex w-full items-center rounded-2xl border transition-[color] outline-none",
+        "group/input-group relative flex w-full items-center rounded-2xl transition-[color] outline-none",
         "h-10 min-w-0 has-[>textarea]:h-auto has-[>textarea]:rounded-2xl",
         // Variants based on alignment.
         "has-[>[data-align=inline-start]]:[&>input]:ps-2",
@@ -22542,9 +22542,9 @@ function c3({ className: e, ...t }) {
         "has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:[&>input]:pb-3",
         "has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3",
         // Focus state.
-        "has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot=input-group-control]:focus-visible]:ring-[3px]",
+        "has-[[data-slot=input-group-control]:focus-visible]:border-brand-border has-[[data-slot=input-group-control]:focus-visible]:border has-[[data-slot=input-group-control]:focus-visible]:ring-ring has-[[data-slot=input-group-control]:focus-visible]:ring-[3px]",
         // Error state.
-        "has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40",
+        "has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:border dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40",
         e
       ),
       ...t
@@ -22552,7 +22552,7 @@ function c3({ className: e, ...t }) {
   );
 }
 const u3 = Yt(
-  "text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-sm group-data-[disabled=true]/input-group:opacity-50",
+  "text-muted-foreground flex h-auto cursor-text items-center justify-center gap-2 py-1.5 text-sm font-medium select-none [&>svg:not([class*='size-'])]:size-4 [&>kbd]:rounded-sm [&>kbd]:bg-secondary group-data-[disabled=true]/input-group:opacity-50",
   {
     variants: {
       align: {
@@ -22642,7 +22642,7 @@ function p3({
     {
       "data-slot": "input-group-control",
       className: T(
-        "flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-0 dark:bg-transparent",
+        "flex-1 rounded-none border-0 bg-input shadow-none focus-visible:ring-0",
         e
       ),
       ...t
@@ -22658,7 +22658,7 @@ function dee({
     {
       "data-slot": "input-group-control",
       className: T(
-        "flex-1 resize-none rounded-2xl border-0 bg-transparent py-3 shadow-none focus-visible:ring-0 dark:bg-transparent",
+        "flex-1 resize-none rounded-2xl border-0 bg-input py-3 shadow-none focus-visible:ring-0",
         e
       ),
       ...t
