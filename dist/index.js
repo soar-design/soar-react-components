@@ -5005,7 +5005,7 @@ const Ls = Yt(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline: "border bg-background hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-accent",
+        outline: "border bg-background hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 hover:text-accent-foreground dark:bg-input/30 border-border dark:hover:bg-accent",
         secondary: "bg-secondary backdrop-blur-xl backdrop-saturate-150 text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline"
@@ -34065,7 +34065,7 @@ const UT = Yt(
     variants: {
       variant: {
         default: "border-transparent bg-transparent",
-        outline: "border-input data-[state=on]:border-brand-border bg-transparent"
+        outline: "border-border data-[state=on]:border-brand-border bg-transparent"
       },
       size: {
         default: "h-9 px-3 min-w-9",
