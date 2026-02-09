@@ -35129,10 +35129,10 @@ const IZ = /* @__PURE__ */ P.forwardRef(function(t, n) {
       theme: t,
       className: "toaster group",
       icons: {
-        success: /* @__PURE__ */ m(pA, { className: "size-4" }),
-        info: /* @__PURE__ */ m(yA, { className: "size-4" }),
-        warning: /* @__PURE__ */ m(TA, { className: "size-4" }),
-        error: /* @__PURE__ */ m(EA, { className: "size-4" }),
+        success: /* @__PURE__ */ m(pA, { className: "size-4 fill-green-500" }),
+        info: /* @__PURE__ */ m(yA, { className: "size-4 fill-blue-500" }),
+        warning: /* @__PURE__ */ m(TA, { className: "size-4 fill-amber-500" }),
+        error: /* @__PURE__ */ m(EA, { className: "size-4 fill-destructive" }),
         loading: /* @__PURE__ */ m(OC, { className: "size-4 animate-spin" })
       },
       style: {
