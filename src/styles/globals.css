@@ -104,6 +104,7 @@
     --color-border: var(--border);
     --color-brand-border: var(--brand-border);
     --color-destructive: var(--destructive);
+    --color-destructive-pale: var(--destructive-pale);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent: var(--accent);
     --color-brand-accent: var(--brand-accent);
@@ -138,6 +139,7 @@
     --card: oklch(0.9761 0 0);
     --card-foreground: oklch(0.145 0.000 0.000);
     --destructive: oklch(0.6425 0.218 28.64);
+    --destructive-pale: oklch(0.9669 0.0162 17.44);
     --accent-foreground: oklch(0.205 0.000 0.000);
     --brand-accent: oklch(0.7615 0.1759 158.36 / 0.1);
     --foreground: oklch(0.145 0.000 0.000);
@@ -187,6 +189,7 @@
     --brand-accent: oklch(0.7615 0.1759 158.36 / 0.2);
     --card-foreground: oklch(0.985 0.000 0.000);
     --destructive: oklch(0.6425 0.218 28.64);
+    --destructive-pale: oklch(0.9669 0.0162 17.44);
     --foreground: oklch(0.985 0.000 0.000);
     --input: oklch(1.000 0.000 0.000 / 0.05);
     --muted: oklch(0.269 0.000 0.000);
