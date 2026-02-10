@@ -3406,7 +3406,7 @@ const kv = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, $v = sr, Y
 }, uD = Yt("grid gap-0.5 rounded-2xl border px-4 py-3 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4 w-full relative group/alert", {
   variants: {
     variant: {
-      default: "bg-card border-border text-card-foreground",
+      default: "bg-card border-border text-foreground",
       destructive: "text-foreground border-destructive-border bg-destructive-background *:data-[slot=alert-description]:text-destructive/90 *:[svg]:text-current",
       warning: "text-foreground border-warning-border bg-warning-background *:data-[slot=alert-description]:text-warning/90 *:[svg]:text-current",
       info: "text-foreground border-info-border bg-info-background *:data-[slot=alert-description]:text-info/90 *:[svg]:text-current",
@@ -3454,7 +3454,7 @@ function SJ({
     {
       "data-slot": "alert-description",
       className: T(
-        "text-muted-foreground text-sm text-balance md:text-pretty [&_p:not(:last-child)]:mb-4 [&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3",
+        "text-foreground text-sm text-balance md:text-pretty [&_p:not(:last-child)]:mb-4 [&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3",
         e
       ),
       ...t
