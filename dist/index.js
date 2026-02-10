@@ -3407,7 +3407,10 @@ const kv = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, $v = sr, Y
   variants: {
     variant: {
       default: "bg-card border-border text-card-foreground",
-      destructive: "text-destructive border-destructive bg-destructive-pale *:data-[slot=alert-description]:text-destructive/90 *:[svg]:text-current"
+      destructive: "text-foreground border-destructive-border bg-destructive-background *:data-[slot=alert-description]:text-destructive/90 *:[svg]:text-current",
+      warning: "text-foreground border-warning-border bg-warning-background *:data-[slot=alert-description]:text-warning/90 *:[svg]:text-current",
+      info: "text-foreground border-info-border bg-info-background *:data-[slot=alert-description]:text-info/90 *:[svg]:text-current",
+      success: "text-foreground border-success-border bg-success-background *:data-[slot=alert-description]:text-success/90 *:[svg]:text-current"
     }
   },
   defaultVariants: {

@@ -91,7 +91,7 @@ export declare function AlertDialogTrigger({ ...props }: React_2.ComponentProps<
 export declare function AlertTitle({ className, ...props }: React_2.ComponentProps<"div">): JSX.Element;
 
 export declare const alertVariants: (props?: ({
-    variant?: "default" | "destructive" | null | undefined;
+    variant?: "default" | "destructive" | "warning" | "info" | "success" | null | undefined;
 } & ClassProp) | undefined) => string;
 
 export declare function AspectRatio({ ...props }: React.ComponentProps<typeof AspectRatioPrimitive.Root>): JSX.Element;
