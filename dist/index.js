@@ -3407,7 +3407,7 @@ const kv = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, $v = sr, Y
   variants: {
     variant: {
       default: "bg-card border-border text-foreground",
-      destructive: "text-foreground border-destructive-border bg-destructive-background *:data-[slot=alert-description]:text-foreground *:[svg]:text-current",
+      destructive: "text-foreground border-destructive-border bg-destructive-background *:data-[slot=alert-title]:text-destructive-foreground *:[svg]:text-destructive-foreground",
       warning: "text-foreground border-warning-border bg-warning-background *:data-[slot=alert-description]:text-foreground *:[svg]:text-current",
       info: "text-foreground border-info-border bg-info-background *:data-[slot=alert-description]:text-foreground *:[svg]:text-current",
       success: "text-foreground border-success-border bg-success-background *:data-[slot=alert-description]:text-foreground *:[svg]:text-current"
