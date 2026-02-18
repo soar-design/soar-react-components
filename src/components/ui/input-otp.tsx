@@ -49,7 +49,7 @@ function InputOTPSlot({
       data-slot="input-otp-slot"
       data-active={isActive}
       className={cn(
-        "data-[active=true]:border-brand-border data-[active=true]:ring-ring data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive bg-input border-transparent relative flex h-9 w-9 items-center justify-center border rounded-lg text-sm font-medium shadow-xs transition-all outline-none data-[active=true]:z-10 data-[active=true]:ring-[3px]",
+        "data-[active=true]:border-brand-border data-[active=true]:ring-ring data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive bg-input border-transparent relative flex h-16 w-16 items-center justify-center border rounded-2xl text-2xl font-bold shadow-xs transition-all outline-none data-[active=true]:z-10 data-[active=true]:ring-[3px]",
         className
       )}
       {...props}
@@ -57,7 +57,7 @@ function InputOTPSlot({
       {char}
       {hasFakeCaret && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="animate-caret-blink bg-foreground h-4 w-px duration-1000" />
+          <div className="animate-caret-blink bg-foreground h-9 w-px duration-1000" />
         </div>
       )}
     </div>
