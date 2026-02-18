@@ -22898,7 +22898,7 @@ function Eee({
     {
       "data-slot": "combobox-chip",
       className: T(
-        "bg-muted text-foreground flex h-[calc(--spacing(5.5))] w-fit items-center justify-center gap-1 rounded-full px-1.5 text-xs font-medium whitespace-nowrap has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-disabled:opacity-50 has-data-[slot=combobox-chip-remove]:pe-0",
+        "bg-muted text-foreground flex h-[calc(--spacing(5.5))] w-fit items-center justify-center gap-1 rounded-full px-2.5 text-xs font-medium whitespace-nowrap has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-disabled:opacity-50 has-data-[slot=combobox-chip-remove]:pe-1",
         e
       ),
       ...r,
@@ -22908,7 +22908,7 @@ function Eee({
           GR,
           {
             render: /* @__PURE__ */ m(ur, { variant: "ghost", size: "icon-xs" }),
-            className: "-ms-1 opacity-50 hover:opacity-100",
+            className: "ms-0.5 opacity-50 hover:opacity-100 size-4!",
             "data-slot": "combobox-chip-remove",
             children: /* @__PURE__ */ m(El, { className: "pointer-events-none" })
           }
@@ -22926,7 +22926,7 @@ function _ee({
     bg,
     {
       "data-slot": "combobox-chip-input",
-      className: T("min-w-16 flex-1 outline-none", e),
+      className: T("min-w-16 flex-1 outline-none py-0! border-0!", e),
       ...n
     }
   );
