@@ -22880,7 +22880,7 @@ function Cee({
     {
       "data-slot": "combobox-chips",
       className: T(
-        "dark:bg-input/30 border-input focus-within:border-ring focus-within:ring-ring has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-9 flex-wrap items-center gap-1.5 rounded-2xl border bg-transparent bg-clip-padding px-2.5 py-1.5 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
+        "dark:bg-input/30 border-border focus-within:border-brand-border focus-within:ring-ring has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-10 flex-wrap items-center gap-1.5 rounded-2xl border bg-transparent bg-clip-padding px-3 py-2 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
         e
       ),
       ...t
@@ -22907,7 +22907,7 @@ function Eee({
         n && /* @__PURE__ */ m(
           GR,
           {
-            render: /* @__PURE__ */ m(ur, { variant: "ghost", size: "icon-xs" }),
+            render: /* @__PURE__ */ m(ur, { variant: "ghost" }),
             className: "ms-0.5 opacity-50 hover:opacity-100 size-4!",
             "data-slot": "combobox-chip-remove",
             children: /* @__PURE__ */ m(El, { className: "pointer-events-none" })
