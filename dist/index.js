@@ -22880,7 +22880,7 @@ function Cee({
     {
       "data-slot": "combobox-chips",
       className: T(
-        "dark:bg-input/30 border-border focus-within:border-brand-border focus-within:ring-ring has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-10 flex-wrap items-center gap-1.5 rounded-2xl border bg-transparent bg-clip-padding px-3 py-2 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
+        "border border-border bg-background dark:bg-input/30 hover:bg-accent hover:backdrop-blur-xl hover:backdrop-saturate-150 focus-within:border-brand-border focus-within:ring-ring has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40 has-aria-invalid:border-destructive dark:has-aria-invalid:border-destructive/50 flex min-h-10 flex-wrap items-center gap-1.5 rounded-2xl bg-clip-padding px-3 py-2 text-sm transition-[color] focus-within:ring-[3px] has-aria-invalid:ring-[3px] has-data-[slot=combobox-chip]:px-1.5",
         e
       ),
       ...t
